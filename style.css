@@ -1,0 +1,54 @@
+/* body{
+  margin: 0;
+} */
+
+/* HEADER */
+header{
+  background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .wrapper-logo-header .logo-header{
+  width: 30%;
+  border-radius: 50%;
+}
+
+header nav .wrapper-menu-nav{
+  background-color: #0000ff;
+  width: 90%;
+  display: flex;
+  display: none; 
+}
+
+/* MAIN */
+main{
+  background: linear-gradient(#1b1828,  #691757, #0B0B13);
+  width: 100%;
+  color: whitesmoke;
+}
+
+/* SECCION DE PRESENTACION */
+/* HERO */
+.container-hero{
+  background-image: url(./images/logo-braida-.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+
+/* SECCION DE HABILIDADES */
+.container-cards{
+  background-color: #deb88700;
+}
+
+.container-cards .card .card-image{
+  background-color: rgb(80, 19, 165);
+  width: 50%;
+}
+
+
