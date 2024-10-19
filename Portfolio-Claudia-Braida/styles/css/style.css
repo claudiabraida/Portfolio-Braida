@@ -1,5 +1,5 @@
 body{
-  background-color: #f43f3f;
+  background-color: #f43f3f00;
   font-family: akshar, sans-serif;
 }
 
@@ -24,7 +24,7 @@ a{
 header{
   background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
   width: 100%;
-  height: 70px;
+  height: 90px;
 }
 
 header .wrapper-logo{
@@ -66,27 +66,27 @@ main .container-hero-about-me{
   background-image: url(./images/logo-braida.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 main .container-hero-about-me #title-about-me{
-  background-color: violet;
+  background-color: rgba(238, 130, 238, 0);
   width: 80%;
   font-weight: 300;
   margin: 0;
 }
 
 .container-hero-about-me .content-about-me{
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0);
   width: 80%;
 }
 
 .paragraph-about-me{
-  background-color: #de1b2f;
+  background-color: #de1b2f00;
 }
 
 .button-lo-que-hago{
@@ -95,7 +95,7 @@ main .container-hero-about-me #title-about-me{
 
 /* SECCION DE CONOCIMIENTOS */
 main .container-my-knowledge{
-  background-color: #a5135c;
+  background-color: #a5135c00;
   color: #e5f94d;
   width: 100%;
   display: flex;
@@ -111,21 +111,76 @@ main .container-my-knowledge{
 }
 
 .container-my-knowledge .paragraph-my-knowledge{
-  color: #ffeede;
+  color: #f18f34;
 }
 
 .wrapper-cards-icons .card-image-icon{
-  width:100%;
+  width:50%;
+  border-radius: 30px;
 }
 
 .text-card-icon{
   background-color: #ffffff69;
   margin: 0;
 }
-/* .wrapper-cards .knowledge{
-margin: 0;
-} */
 
+/* SECCION DE PROYECTOS */
+main #container-projects{
+background-color: #0e4151;
+height: 800px;
+display: flex;
+justify-content: space-between;
+
+}
+
+main #container-projects #title-projects{
+  background-color: #6f51af00;
+  width: 10%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: start;
+  margin:31px 15px 1px;
+}
+
+main #container-projects .wrapper-paragraph-projects{
+  background-color: #33dbd000;
+  width: 80%;
+  height: 180px;
+}
+
+main #container-projects .paragraph-projects{
+  background-color: #f9636300;
+  width: 90%;
+  font-size: 12px;
+  text-align: end;
+  line-height: 1.5;
+}
+
+#container-projects .wrapper-cards-projects{
+background-color: #ff6d2f00;
+width:70%;
+height: 100px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+margin: auto;
+margin-bottom: 39px;
+padding: 2px;
+}
+
+.wrapper-cards-projects .card-image-project-1{
+  width:100%;
+
+}
+
+.text-card-project-1{
+  margin: 0;
+  padding: 10px;
+}
 /* MEDIA QUERIES */
 
 /* TABLET */
@@ -159,7 +214,7 @@ margin: 0;
 }
 
 .cards-icon-knowledge{
-  background-color: aqua;
+  background-color: #250530;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
