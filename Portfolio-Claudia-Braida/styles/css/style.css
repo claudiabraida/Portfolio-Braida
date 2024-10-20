@@ -126,10 +126,10 @@ main .container-my-knowledge{
 
 /* SECCION DE PROYECTOS */
 main #container-projects{
-background-color: #0e4151;
-height: 800px;
-display: flex;
-justify-content: space-between;
+  background-color: #0e4151;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
 
 }
 
@@ -159,22 +159,21 @@ main #container-projects .paragraph-projects{
 }
 
 #container-projects .wrapper-cards-projects{
-background-color: #ff6d2f00;
-width:70%;
-height: 100px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-text-align: center;
-margin: auto;
-margin-bottom: 39px;
-padding: 2px;
+  background-color: #ff6d2f00;
+  width:70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 39px;
+  padding: 2px;
 }
 
 .wrapper-cards-projects .card-image-project-1{
   width:100%;
-
 }
 
 .text-card-project-1{
