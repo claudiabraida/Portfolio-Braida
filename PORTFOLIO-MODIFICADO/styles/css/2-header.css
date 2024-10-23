@@ -1,0 +1,26 @@
+/* *******HEADER******* */
+header{
+  background-color: #fff700;
+  height: 40px;
+  position: fixed;
+}
+
+header .wrapper-logo{
+  border: 1px solid #ff472f;
+}
+
+header .wrapper-logo .logo-header{
+  width: 10%;
+  
+}
+
+/* .......NAV....... */
+header nav{
+  border: 1px solid rgb(24, 80, 220);
+  /*  */display:none
+}
+
+nav .wrapper-menu-nav{
+  border: 1px solid rgb(220, 24, 178);
+  /* position: fixed; */
+}

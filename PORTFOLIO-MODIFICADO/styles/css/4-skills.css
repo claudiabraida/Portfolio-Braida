@@ -1,0 +1,54 @@
+/* *******SECTION SKILLS******* */
+main .container-skills{
+  background-color: rgb(7, 178, 172);
+}
+
+.container-skills #title-skills{
+  border: 1px solid rgb(255, 254, 254);
+}
+
+.container-skills .paragraph-skills{
+  border: 1px solid #fffffc;
+}
+
+/* .......BOX SKILLS LOGOS....... */
+.container-skills .box-skills{
+  border:1px solid #ff0707;
+}
+
+.container-skills .box-skills .wrapper-skill-logo {
+ border: 1px solid #c4ff3a;
+}
+
+.wrapper-skill-logo .skill-logo{
+  width: 70%;
+}
+
+/* .......LOGOS IMG....... */
+/* .wrapper-skill-logo .skill-logo .logo-html-5{
+  
+}
+
+.wrapper-skill-logo .skill-logo .logo-css-3{
+  
+}
+
+.wrapper-skill-logo .skill-logo .logo-js{
+  
+}
+
+.wrapper-skill-logo .skill-logo .logo-react{
+  
+}
+
+.wrapper-skill-logo .skill-logo .logo-sass{
+  
+}
+
+.wrapper-skill-logo .skill-logo .logo-git{
+  
+}*/
+
+.wrapper-skill-logo .tex-name-logo{
+  color: rgb(72, 255, 0);
+}

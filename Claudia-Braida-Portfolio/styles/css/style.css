@@ -116,7 +116,7 @@ main .container-my-knowledge{
 
 .wrapper-cards-icons .card-image-icon{
   width:50%;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .text-card-icon{
@@ -227,7 +227,7 @@ main #container-projects .paragraph-projects{
 
 .wrapper-cards-icons .card-image-icon{
   width:100%;
-  border-radius:50%;
+  /* border-radius:50%; */
 }
 
 }

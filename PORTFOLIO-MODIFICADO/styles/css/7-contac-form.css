@@ -1,0 +1,44 @@
+/* ****SECTION CONTACT FORM**** */
+main .container-contact{
+  background-color: coral;
+}
+
+.container-contact #title-contact-me{
+  border: 1px solid black;
+}
+
+.container-contact .paragraph-contact{
+  background-color: #eb3aff;
+}
+
+/* .......CONTACT....... */
+.container-contact .wrapper-links-contact{
+  border: 1px solid yellow;
+}
+
+.container-contact .wrapper-links-contact .contact{
+  color: #4a730d;
+}
+
+/* .......FORM....... */
+main .container-contact form{
+  background-color: #2f2f93;
+}
+
+.container-contact form fieldset{
+  background-color: #6eb019;
+  width: 50px;
+}
+
+form fieldset label{
+  color: red;
+}
+
+form fieldset input{
+  background-color: #50fff9;
+  resize: none;
+}
+
+form button{
+  border-radius: 20px;
+}

@@ -1,0 +1,22 @@
+@import url('./2-header.css');
+@import url('./3-hero.css');
+@import url('./4-skills.css');
+@import url('./5-quote.css');
+@import url('./6-projects.css');
+@import url('./7-contac-form.css');
+@import url('./8-footer.css');
+
+
+/* ....ESTILOS GENERALES.... */
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+/* ......................... */
+
+
+
+

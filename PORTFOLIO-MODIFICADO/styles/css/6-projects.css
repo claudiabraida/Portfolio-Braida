@@ -1,0 +1,29 @@
+/* *****SECTION PROYECTS***** */
+main .container-projects{
+  background-color: #fff707;
+}
+
+.container-projects #title-projects{
+  border: 1px solid black;
+}
+
+.container-projects .paragraph-projects{
+  border: 1px solid red;
+}
+
+/* .....CARDS PROJECTS..... */
+main .container-projects .wrapper-cards-projects{
+  background-color: rgb(11, 11, 89);
+}
+
+.container-projects .wrapper-cards-projects .card{
+  background-color: #d3269f;
+}
+
+.wrapper-cards-projects .image-project{
+  width: 80%;
+}
+
+.wrapper-cards-projects .card .text-project{
+  font-size: 12px;
+}

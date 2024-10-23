@@ -1,0 +1,11 @@
+/* *******QUOTE******* */
+main blockquote{
+  border: 1px solid #14140c;
+}
+
+blockquote .fa-quote-right{
+  color: red;
+}
+blockquote .paragraph-cite{
+  color: #6eb019;
+}

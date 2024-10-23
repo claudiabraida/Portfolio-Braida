@@ -1,0 +1,20 @@
+/* *****FOOTER***** */
+footer{
+  background-color: rgb(255, 208, 0);
+}
+
+footer .footer-links-items{
+  background-color: #eb3aff;
+}
+
+footer .footer-social-contact{
+  background-color: #6eb019;
+}
+
+footer .footer-paragraph{
+  background-color: #fff;
+}
+
+footer .copyright{
+  background-color: #50fff9;
+}
