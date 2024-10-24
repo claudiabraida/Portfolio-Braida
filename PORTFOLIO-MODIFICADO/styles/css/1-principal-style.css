@@ -6,8 +6,11 @@
 @import url('./7-contac-form.css');
 @import url('./8-footer.css');
 
-
 /* ....ESTILOS GENERALES.... */
+:root{
+  --white-smoke: #f5f5f5;
+}
+
 ul{
   list-style: none;
 }

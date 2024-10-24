@@ -2,7 +2,7 @@
 header{
   background-color: #fff700;
   height: 40px;
-  position: fixed;
+  /* position: fixed; */
 }
 
 header .wrapper-logo{
@@ -17,7 +17,8 @@ header .wrapper-logo .logo-header{
 /* .......NAV....... */
 header nav{
   border: 1px solid rgb(24, 80, 220);
-  /*  */display:none
+  
+  /*  */display:none;
 }
 
 nav .wrapper-menu-nav{
