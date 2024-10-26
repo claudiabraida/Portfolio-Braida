@@ -1,3 +1,15 @@
+/* estilos generales */
+fieldset,
+input,
+button{
+  border: none;
+}
+
+input,
+button,
+textarea{
+  border-radius: var(--radius-1);
+}
 /* ****SECTION CONTACT FORM**** */
 main .container-contact{
   background-color: coral;
@@ -27,7 +39,7 @@ main .container-contact{
   /* background-color: #ff00d4; */
   width: 100%;
   height: 110px;
-  /* */display: flex;
+  display: flex;
   flex-direction: column;
   justify-content:space-between;
 }
@@ -38,7 +50,7 @@ main .container-contact{
   display: flex;
   flex-direction: row;
   gap: 20px;
- margin:0px 20px;
+  margin:0px 25px;
 }
 
 .container-contact .links-contact .contact{
@@ -62,26 +74,66 @@ main .container-contact{
 } */
 /* .......FORM....... */
 main .container-contact form{
-  background-color: #2f2f93;
-  width: 100%;
+  background-color: #710c5e;
+  width: 90%;
+  border-radius: 20px;
   margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 10px;
 }
 
 .container-contact form fieldset{
-  background-color: #6eb019;
+  width: 90%;
+  background-color: #710c5e;
   display: flex;
   flex-direction: column;
+ 
+  /* border-radius: 20px; */
+  /* ARREGLAR ESTO 
+  En el formulario se coloca el boton enviar dentro del último fieldset.
+Se dimensionan los textos de label, input y placeholder
+incorporación de videos en archivo Videos */
+  gap: 5px;
+
 }
 
 .container-contact fieldset label{
-  color: red;
+  color: var(--white-smoke);
+  width: 90%;
+  font-size: 22px;
+  margin: auto;
 }
 
 form fieldset input{
-  background-color: #50fff9;
+  /* background-color: #50fff9; */
+  width: 90%;
+  height: 50px;
+  font-size: 22px;
+  margin: auto;
+}
+
+textarea{
+  width: 90%;
+  height: 70px;
+  font-size: 20px;
   resize: none;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+::placeholder{
+  color: #b7b3b3;
+  text-align: center;
+  line-height: 3.6;
 }
 
 form button{
-  border-radius: 20px;
+  width: 40%;
+  height: 40px;
+  font-size: 14px;
+  margin: auto;
+  position:relative;
+  top: -10px;
+  left: 0;
+  right: 0;
 }

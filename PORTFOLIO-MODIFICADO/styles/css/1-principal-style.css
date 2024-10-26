@@ -9,7 +9,7 @@
 /* ....ESTILOS GENERALES.... */
 :root{
   --white-smoke: #f5f5f5;
-  /* --font-size: 20px; */
+  --radius-1: 10px;
 }
 
 ul{

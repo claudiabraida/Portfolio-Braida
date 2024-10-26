@@ -1,6 +1,7 @@
 /* *****SECTION PROYECTS***** */
 main .container-projects{
   background-color: #fff707;
+  height: 800px;
 }
 
 .container-projects #title-projects{
@@ -8,20 +9,20 @@ main .container-projects{
 }
 
 .container-projects .paragraph-projects{
-  border: 1px solid red;
+  border: 1px solid #30642c;
 }
 
 /* .....CARDS PROJECTS..... */
 main .container-projects .wrapper-cards-projects{
-  background-color: rgb(11, 11, 89);
+  background-color: #e61b1b;
 }
 
 .container-projects .wrapper-cards-projects .card{
   background-color: #d3269f;
 }
 
-.wrapper-cards-projects .image-project{
-  width: 80%;
+.wrapper-cards-projects .video-project{
+  width: 100%;
 }
 
 .wrapper-cards-projects .card .text-project{
