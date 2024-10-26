@@ -87,14 +87,6 @@ main .container-contact form{
   background-color: #710c5e;
   display: flex;
   flex-direction: column;
- 
-  /* border-radius: 20px; */
-  /* ARREGLAR ESTO 
-  En el formulario se coloca el boton enviar dentro del último fieldset.
-Se dimensionan los textos de label, input y placeholder
-incorporación de videos en archivo Videos */
-  gap: 5px;
-
 }
 
 .container-contact fieldset label{
