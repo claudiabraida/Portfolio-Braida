@@ -1,11 +1,19 @@
 /* *****SECTION PROYECTS***** */
 main .container-projects{
   background-color: #fff707;
-  height: 800px;
+  height: 1000px;
+  position: relative;
 }
 
-.container-projects #title-projects{
-  border: 1px solid black;
+main .container-projects #title-projects{
+  background-color: #6f51af00;
+  width: 10%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: start;
+  margin:31px 15px 1px;
 }
 
 .container-projects .paragraph-projects{
@@ -14,11 +22,16 @@ main .container-projects{
 
 /* .....CARDS PROJECTS..... */
 main .container-projects .wrapper-cards-projects{
-  background-color: #e61b1b;
+  background-color: #e61b1b00;
+  position: absolute;
+  top: 10%;
+  /* display: none; */
 }
 
 .container-projects .wrapper-cards-projects .card{
   background-color: #d3269f;
+  width: 90%;
+  margin: 20px 20px 20px 15px;
 }
 
 .wrapper-cards-projects .video-project{
@@ -26,5 +39,7 @@ main .container-projects .wrapper-cards-projects{
 }
 
 .wrapper-cards-projects .card .text-project{
-  font-size: 12px;
+  font-size: 26px;
+  text-align: center;
 }
+

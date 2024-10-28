@@ -1,27 +1,89 @@
 /* *******HEADER******* */
 header{
-  background-color: #fff700;
-  height: 40px;
-  /* position: fixed; */
+  width: 100%;
+  background-color: #fff700;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30%;
 }
 
-header .wrapper-logo{
-  border: 1px solid #ff472f;
+header .wrapper-logo-braida .logo-braida,
+header .wrapper-logo-menu .logo-menu{
+  width: 50%;
+  padding: 6px;
+  cursor: pointer;
 }
 
-header .wrapper-logo .logo-header{
-  width: 10%;
+header .wrapper-menu-nav{
+  display: none;
+  width: 100%;
+}
+
+
+/* *******************MEDIAS QUERIES******************* */
+
+/* ................MEDIA QUERIE TABLET*................ */
+
+@media (min-width: 768px){
+  header{
+    gap: 20px;
+  }
+
+  header .wrapper-logo-braida .logo-braida{
+    width: 20%;
+  }
   
-}
-
-/* .......NAV....... */
-header nav{
-  border: 1px solid rgb(24, 80, 220);
+  header .wrapper-logo-menu .logo-menu{
+    display: none;
+  }
   
-  /*  */display:none;
+  /* .......NAV....... */
+  header .wrapper-menu-nav{
+    background-color: #ff9500;
+
+    display: flex;
+  }
+  
+  header .wrapper-menu-nav ul{ 
+    background-color: #68ef29fa;
+    width: 100%;
+    font-size: 18px;
+  }
+    
 }
 
-nav .wrapper-menu-nav{
-  border: 1px solid rgb(220, 24, 178);
-  /* position: fixed; */
+
+
+/* ................MEDIA QUERIE DESKTOP................ */
+@media (min-width:1024px){
+  header{
+    justify-content: center;
+    gap:4%;
+  
+  }
+  
+  
+  header .wrapper-logo-braida{
+    width: 100px;
+  }
+
+  header .wrapper-logo-braida .logo-braida{
+    width: 110px;
+  }
+
+  header .wrapper-menu-nav{
+    width: 70%;
+    font-size: 50px;
+    display: flex;
+  }
+
+  header .wrapper-menu-nav ul{
+    font-size: 26px;
+  }
+
+  
+
 }
+/* ................MEDIA QUERIE 4K................... */
