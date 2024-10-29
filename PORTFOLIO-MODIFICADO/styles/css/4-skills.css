@@ -1,6 +1,6 @@
 /* *******SECTION SKILLS******* */
 main .container-skills{
-  background-color: #040404;
+  background-color: #e64e4e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,18 +8,21 @@ main .container-skills{
 }
 
 .container-skills #title-skills{
-  border: 1px solid #8e2b2b;
+  border: 1px solid #fff1f1;
   margin: 20px 0px 15px 0px;
 }
 
 .container-skills .paragraph-skills{
-  border: 1px solid #3b3b18;
+  border: 1px solid #eeeeed;
+  width: 80%;
+  font-size: 0.90em;
+  line-height: 1.5;
   margin: 0px 10px 20px 10px;
 }
 
-/* .......BOX SKILLS LOGOS....... */
+/* .......SKILLS....... */
 .container-skills .box-skills{
-  background-color: #010101;
+  background-color: #691eda;
   width: 100%;
   height: 280px;
   display: flex;
@@ -30,7 +33,7 @@ main .container-skills{
 
 .container-skills .box-skills figure:nth-child(n){
   border: 1px solid #ffffff;
-  background-size: 50%;
+  background-size: 60%;
   /* background-color: brown; */
   width: 22%;
   height: 70px;
@@ -39,6 +42,10 @@ main .container-skills{
   flex-direction: column;
   justify-content: flex-end;
   margin: 25px 10px;  
+  /* A lo largo del html existen elementos que se repiten y se encuentran dentro
+   de secciones diferentes, para dar estilos a ciertos eleentos sim que afecten
+   al resto; se acude a la pseudo-clase nth-child() para especificar estilos
+   a elementos de una seccion específica */
 }
 
 .container-skills .box-skills .skill-logo-html{
@@ -50,7 +57,7 @@ main .container-skills{
 }
 
 .container-skills .box-skills .skill-logo-js{
-  background: no-repeat 50% 54% /contain url(./images-logos/3-js-logo.png);
+  background: no-repeat 50% 50% /contain url(./images-logos/3-js-logo.png);
 }
 
 .container-skills .box-skills .skill-logo-react{
@@ -58,64 +65,98 @@ main .container-skills{
 }
 
 .container-skills .box-skills .skill-logo-sass{
-  background: no-repeat 50% 54% /contain url(./images-logos/5-sass-logo.png);
+  background: no-repeat 55% 50% /contain url(./images-logos/5-sass-logo.png);
 }
 
 .container-skills .box-skills .skill-logo-git{
   background: no-repeat 50% 54% /contain url(./images-logos/6-git-logo.png);
- 
   /* border: 1px solid red;
   width: 30%;
   height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; */
+  /*Se omiten imágenes en html y se las coloca desde la propiedad background-image 
+    Se utiliza shorthand en la propiedad background-image para reducir código
+   */
 }
-
-/* SIMPLIFICACIÓN DE CÓDIGOS, REDUCCION DE ELEMENTOS EN HTML
-   Se omiten imágenes en html y se las coloca desde la propiedad background-image 
-   Se utiliza shorthand en la propiedad background-image para reducir código
-   Alo largo del html existen elementos que se repiten y se encuentran dentro
-   de secciones diferentes, para dar estilos a ciertos eleentos sim que afecten
-   al resto; se acude a la pseudo-clase nth-child() para especificar estilos
-   a elementos de una seccion específica.  
-*/
 
 .container-skills .box-skills .name-skill-logo{
   /* background-color: red; */
-  color: #070806;
   font-size: 12px;
   color: whitesmoke;
   position: relative;
   top: 35%;
 }
 
+/* *******************MEDIAS QUERIES******************* */
 
+/* ................MEDIA QUERIE TABLET*................ */
 
+@media (min-width: 768px){
+  .container-skills #title-skills{
+    font-size: 3em;
+    margin: 10px 0px 40px 0px;
+  }
 
+  .container-skills .paragraph-skills{
+    width: 80%;
+    font-size: 2.3em;
+    line-height: 1.9;
+    margin: 0px 30px 50px 30px;
+  }
 
-/* .......LOGOS IMG....... */
-/* .wrapper-skill-logo .skill-logo .logo-html-5{
+ .container-skills .box-skills{
+    height: 1010px;
+    justify-content: center;
+    gap: 60px;
+  }
 
+  .container-skills .box-skills figure:nth-child(n){
+    background-size: 59%;
+    width: 30%;
+    height: 230px;
+    margin: 1.9%;
+  }
+
+  .container-skills .box-skills .name-skill-logo{
+    /* background-color: red; */
+    font-size: 28px;
+    top: 22%;
+  }
+}
+  
+/* ................MEDIA QUERIE DESKTOP................ */
+@media (min-width:1024px){
+  .container-skills #title-skills{
+    border: 1px solid #fff1f1;
+    font-size: 4em;
+    margin: 50px 0px 40px 0px;
+  }
+
+  .container-skills .paragraph-skills{
+    border: 1px solid #eeeeed;
+    font-size: 3em;
+    line-height: 1.9;
+    margin: 0px 30px 50px 30px;
+  }
+
+ .container-skills .box-skills{
+    height: 1300px;
+  }
+
+  .container-skills .box-skills figure:nth-child(n){
+    background-size: 59%;
+    height: 300px;
+  }
+
+  .container-skills .box-skills .name-skill-logo{
+    /* background-color: red; */
+    font-size: 2em;
+    top: 25%;
+  }
 }
 
-.wrapper-skill-logo .skill-logo .logo-css-3{
+/* ................MEDIA QUERIE 4K................... */
 
-}
-
-.wrapper-skill-logo .skill-logo .logo-js{
-
-}
-
-.wrapper-skill-logo .skill-logo .logo-react{
-
-}
-
-.wrapper-skill-logo .skill-logo .logo-sass{
-
-}
-
-.wrapper-skill-logo .skill-logo .logo-git{
-
-}*/
 

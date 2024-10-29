@@ -1,11 +1,78 @@
 /* *******QUOTE******* */
 main blockquote{
-  border: 1px solid #14140c;
+  background-color: #9a306f;
+  border: 1px solid #d8d831;
+  width: 90%;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
 }
 
 blockquote .fa-quote-right{
-  color: red;
+  /* background-color: blue; */
+  color:#f5f5f5;
+  font-size: 2em;
+  margin: 0px 20px -9px 20px;
 }
+
 blockquote .paragraph-cite{
-  color: #6eb019;
+  /* background-color: red; */
+  width: 100%;
+  color: #f5f5f5;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0px 20px 6px 20px;
 }
+
+/* *******************MEDIAS QUERIES******************* */
+
+/* ................MEDIA QUERIE TABLET*................ */
+
+@media (min-width: 768px){
+  main blockquote{
+    width: 90%;
+    height: 490px;
+  }
+
+  blockquote .fa-quote-right{
+    font-size: 4em;
+    margin: 0px 20px 0px 20px;
+  }
+
+  blockquote .paragraph-cite{
+    width: 90%;
+    font-size: 2.3em;
+    line-height: 1.6;
+    margin: 0px 20px 6px 20px;
+  }
+
+}
+  
+/* ................MEDIA QUERIE DESKTOP................ */
+@media (min-width:1024px){
+  main blockquote{
+    width: 90%;
+    height: 790px;
+  }
+  
+  blockquote .fa-quote-right{
+    font-size: 7em;
+    position: relative;
+    top: 1%;
+   
+  }
+  
+  blockquote .paragraph-cite{
+    width: 90%;
+    font-size: 3em;
+    line-height: 1.7;
+   
+  }
+  
+}
+
+/* ................MEDIA QUERIE 4K................... */

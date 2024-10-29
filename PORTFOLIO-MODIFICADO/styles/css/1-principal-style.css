@@ -7,9 +7,14 @@
 @import url('./8-footer.css');
 
 /* ....ESTILOS GENERALES.... */
-:root{
-  --white-smoke: #f5f5f5;
+ :root{
+  /*--white-smoke: #f5f5f5;*/
   --radius-1: 10px;
+} 
+
+body{
+  background-color: #000000;
+  color:#f5f5f5;
 }
 
 ul{

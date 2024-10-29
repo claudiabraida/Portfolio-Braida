@@ -88,11 +88,6 @@ main .container-contact form{
   background-color: #710c5e;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-=======
-  gap: 5px;
-
->>>>>>> 27d85197a99397ac697bc3c4a93f368804c7534c
 }
 
 .container-contact fieldset label{
@@ -100,6 +95,7 @@ main .container-contact form{
   width: 80%;
   font-size: 18px;
   margin: auto;
+  padding:0px 0px 5px 0px;
 }
 
 form fieldset input{
@@ -130,8 +126,5 @@ form button{
   height: 30px;
   font-size: 14px;
   margin: auto;
-  position:relative;
-  top: -10px;
-  left: 0;
-  right: 0;
+ 
 }
