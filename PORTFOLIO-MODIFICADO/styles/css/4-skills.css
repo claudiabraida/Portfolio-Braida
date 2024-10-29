@@ -1,72 +1,94 @@
 /* *******SECTION SKILLS******* */
 main .container-skills{
-  background-color: #cd42e6;
+  background-color: #040404;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* */text-align: center;
-}
-
-.container-skills #title-skills{
-  border: 1px solid #8e2b2b;
-}
-
-.container-skills .paragraph-skills{
-  border: 1px solid #3b3b18;
-}
-
-/* .......BOX SKILLS LOGOS....... */
-.container-skills .box-skills{
-  background-color: #2bf55a;
-  width: 100%;
-
-/* border-radius: 50%;
-  overflow: hidden; */
-
-  
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-  align-items: center;
-   /**/
-  
-}
-
-.container-skills .box-skills .wrapper-skill {
-  background-color: #cb1b12;
-  width: 25%;
-  /* border-radius: 50%;
-  height: 90px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.container-skills .box-skills .wrapper-skill .skill-logo{
-  width: 100%;
+.container-skills #title-skills{
+  border: 1px solid #8e2b2b;
+  margin: 20px 0px 15px 0px;
 }
 
-/* .container-skills .box-skills .logo-1{
-  } */
-  /* position: relative;
-  top: 40%;
-  right:5%; */
+.container-skills .paragraph-skills{
+  border: 1px solid #3b3b18;
+  margin: 0px 10px 20px 10px;
+}
 
+/* .......BOX SKILLS LOGOS....... */
+.container-skills .box-skills{
+  background-color: #010101;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
 
-/* .container-skills .box-skills .logo-2{
-  } */
-  /* position: relative;
-  top: 40%;
-  left:15%; */
+.container-skills .box-skills figure:nth-child(n){
+  border: 1px solid #ffffff;
+  background-size: 50%;
+  /* background-color: brown; */
+  width: 22%;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 25px 10px;  
+}
 
+.container-skills .box-skills .skill-logo-html{
+  background: no-repeat 50% 54% /contain url(./images-logos/1-html-logo.png);
+}
 
-/* .container-skills .box-skills .logo-3{
-  } */
-  /* position: relative;
-  top: 40%;
-  left:75%; */
+.container-skills .box-skills .skill-logo-css{
+  background: no-repeat 50% 54% /contain url(./images-logos/2-css-logo.png);
+}
+
+.container-skills .box-skills .skill-logo-js{
+  background: no-repeat 50% 54% /contain url(./images-logos/3-js-logo.png);
+}
+
+.container-skills .box-skills .skill-logo-react{
+  background: no-repeat 50% 54% /contain url(./images-logos/4-react-logo.png);
+}
+
+.container-skills .box-skills .skill-logo-sass{
+  background: no-repeat 50% 54% /contain url(./images-logos/5-sass-logo.png);
+}
+
+.container-skills .box-skills .skill-logo-git{
+  background: no-repeat 50% 54% /contain url(./images-logos/6-git-logo.png);
+ 
+  /* border: 1px solid red;
+  width: 30%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+}
+
+/* SIMPLIFICACIÓN DE CÓDIGOS, REDUCCION DE ELEMENTOS EN HTML
+   Se omiten imágenes en html y se las coloca desde la propiedad background-image 
+   Se utiliza shorthand en la propiedad background-image para reducir código
+   Alo largo del html existen elementos que se repiten y se encuentran dentro
+   de secciones diferentes, para dar estilos a ciertos eleentos sim que afecten
+   al resto; se acude a la pseudo-clase nth-child() para especificar estilos
+   a elementos de una seccion específica.  
+*/
+
+.container-skills .box-skills .name-skill-logo{
+  /* background-color: red; */
+  color: #070806;
+  font-size: 12px;
+  color: whitesmoke;
+  position: relative;
+  top: 35%;
+}
 
 
 
@@ -97,6 +119,3 @@ main .container-skills{
 
 }*/
 
-.wrapper-skill-logo .tex-name-logo{
-  color: #070806;
-}
