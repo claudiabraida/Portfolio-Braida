@@ -1,6 +1,6 @@
 /* *******SECTION SKILLS******* */
 main .container-skills{
-  background-color: #e64e4e;
+  /* background-color: #e64e4e; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +15,7 @@ main .container-skills{
 .container-skills .paragraph-skills{
   border: 1px solid #eeeeed;
   width: 80%;
+  font-family: var(--genos);
   font-size: 0.90em;
   line-height: 1.5;
   margin: 0px 10px 20px 10px;
@@ -22,9 +23,9 @@ main .container-skills{
 
 /* .......SKILLS....... */
 .container-skills .box-skills{
-  background-color: #691eda;
+  /* background-color: #691eda; */
   width: 100%;
-  height: 280px;
+  height: 270px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -33,11 +34,13 @@ main .container-skills{
 
 .container-skills .box-skills figure:nth-child(n){
   border: 1px solid #ffffff;
-  background-size: 60%;
+ 
+  /* background-size:50%;
+  background-position: center; */
   /* background-color: brown; */
-  width: 22%;
-  height: 70px;
-  border-radius: 50%;
+  width: 21%;
+  height: 69px;
+  border-radius: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -50,26 +53,34 @@ main .container-skills{
 
 .container-skills .box-skills .skill-logo-html{
   background: no-repeat 50% 54% /contain url(./images-logos/1-html-logo.png);
+  background-size: 60%;
 }
 
 .container-skills .box-skills .skill-logo-css{
   background: no-repeat 50% 54% /contain url(./images-logos/2-css-logo.png);
+  background-size: 60%;
 }
 
 .container-skills .box-skills .skill-logo-js{
-  background: no-repeat 50% 50% /contain url(./images-logos/3-js-logo.png);
+  background: no-repeat 50% 54% /contain url(./images-logos/3-js-logo.png);
+  background-size: 60%;
+
 }
 
 .container-skills .box-skills .skill-logo-react{
   background: no-repeat 50% 54% /contain url(./images-logos/4-react-logo.png);
+  background-size: 60%;
 }
 
 .container-skills .box-skills .skill-logo-sass{
-  background: no-repeat 55% 50% /contain url(./images-logos/5-sass-logo.png);
+  background: no-repeat 50% 54% /contain url(./images-logos/5-sass-logo.png);
+  background-size: 60%;
 }
 
 .container-skills .box-skills .skill-logo-git{
   background: no-repeat 50% 54% /contain url(./images-logos/6-git-logo.png);
+  background-size: 60%;
+
   /* border: 1px solid red;
   width: 30%;
   height: 120px;

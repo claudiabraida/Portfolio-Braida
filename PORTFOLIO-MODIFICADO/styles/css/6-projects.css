@@ -1,45 +1,68 @@
 /* *****SECTION PROYECTS***** */
-main .container-projects{
-  background-color: #fff707;
-  height: 1000px;
-  position: relative;
+main #container-projects{
+  background-color: #0b7d76;
+  /* height: 500px; */
 }
 
-main .container-projects #title-projects{
+main #container-projects #title-projects{
   background-color: #6f51af00;
   width: 10%;
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 1.5em;
   text-align: start;
-  margin:31px 15px 1px;
+  margin:12px 15px 1px;
 }
 
-.container-projects .paragraph-projects{
-  border: 1px solid #30642c;
+#container-projects .paragraph-projects{
+  border: 1px solid #b5ecb2;
+  width: 70%;
+  letter-spacing: 0.3px;
+ 
 }
 
 /* .....CARDS PROJECTS..... */
-main .container-projects .wrapper-cards-projects{
-  background-color: #e61b1b00;
-  position: absolute;
-  top: 10%;
-  /* display: none; */
-}
 
-.container-projects .wrapper-cards-projects .card{
+main #container-projects .wrapper-cards-projects{
+  background-color: #1b39e6;
+ 
+} 
+
+#container-projects .wrapper-cards-projects .card{
   background-color: #d3269f;
-  width: 90%;
-  margin: 20px 20px 20px 15px;
+
 }
 
-.wrapper-cards-projects .video-project{
-  width: 100%;
-}
+main #container-projects .wrapper-cards-projects 
+.image-project-1,
+.image-project-2,
+.image-project-3,
+.image-project-4{
+  width: 70%;
+} 
 
 .wrapper-cards-projects .card .text-project{
-  font-size: 26px;
+  font-size: 1.3em;
   text-align: center;
+  position: relative;
+  left: 5%;
 }
+
+
+/* ESTILOS PARA VIDEOS */
+
+/* .wrapper-cards-projects .video-project{
+  width: 100%;
+  position: relative;
+  left: -1%;
+} */
+
+/* .wrapper-cards-projects 
+.project-2,
+.project-3,
+.project-4{
+  display: none;
+} */
+
 
