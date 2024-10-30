@@ -1,7 +1,7 @@
 /* *******HEADER******* */
 header{
   width: 100%;
-  background-color: #fff700;;
+  background: linear-gradient(#0b0a10, #9F1E83, #0B0B13);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,6 +1,12 @@
 /* *****SECTION PROYECTS***** */
 main #container-projects{
-  background-color: #0b7d76;
+  /* background-color: #0b7d76; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
   /* height: 500px; */
 }
 
@@ -11,27 +17,40 @@ main #container-projects #title-projects{
   text-orientation: upright;
   font-weight: 300;
   font-size: 1.5em;
-  text-align: start;
-  margin:12px 15px 1px;
+  margin: 0;
+  /* margin:12px 15px 1px; */
 }
 
 #container-projects .paragraph-projects{
   border: 1px solid #b5ecb2;
   width: 70%;
   letter-spacing: 0.3px;
- 
+  
 }
 
 /* .....CARDS PROJECTS..... */
 
 main #container-projects .wrapper-cards-projects{
-  background-color: #1b39e6;
+  /* background-color: #1b39e6; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+ 
  
 } 
 
 #container-projects .wrapper-cards-projects .card{
-  background-color: #d3269f;
-
+  /* background-color: #d3269f; */
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 40px;
+  box-shadow:  20px 10px  68px -60px #2e5996 ;
 }
 
 main #container-projects .wrapper-cards-projects 
@@ -39,19 +58,21 @@ main #container-projects .wrapper-cards-projects
 .image-project-2,
 .image-project-3,
 .image-project-4{
-  width: 70%;
+  width: 80%;
+  border-radius: 10px;
+  margin: 8% 3% ;
+  box-shadow: 0px 40px 50px #182c49 ;
 } 
 
 .wrapper-cards-projects .card .text-project{
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: center;
-  position: relative;
-  left: 5%;
+  margin: -6% 1% ;
+  /* position: relative; */
+  /* left: 5%; */
 }
 
-
 /* ESTILOS PARA VIDEOS */
-
 /* .wrapper-cards-projects .video-project{
   width: 100%;
   position: relative;
