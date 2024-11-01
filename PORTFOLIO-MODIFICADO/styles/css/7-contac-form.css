@@ -10,8 +10,11 @@ button,
 textarea{
   border-radius: var(--radius-1);
 }
+
 /* ****SECTION CONTACT FORM**** */
 main .container-contact{
+  /* background-color: rgb(255, 85, 0); */
+  background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
   font-family: var(--genos);
   display: flex;
   flex-direction: column;
@@ -24,70 +27,83 @@ main .container-contact{
   font-size: 1.8em;
   font-weight: 400;
   letter-spacing: 3px;
-  margin: 70px 0px 10px 0px;
+  margin: 8% 0% -2% 0%;
 }
 
 .container-contact .paragraph-contact{
   /* background-color: #1d5a5a; */
-  width: 80%;
-  font-size: 1.1em;
-  font-weight: 300;
+  width: 90%;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
   line-height: 1.4;
-  
+  margin: 4% 0% 4% 0%;
 }
 
-/* .......CONTACT....... */
- /*.container-contact .links-contact{
-  background-color: #d23333;
- width: 100%;
-  height: 110px;
+/* ............LINKS CONTACT............ */
+.container-contact .wrapper-contact{
+  /* background-color: rgb(240, 50, 50); */
+  width: 100%;
+  /* display: flex; */
+  
+  /* height: 400px;
+  display: flex;
+  justify-content: center; */
+
+}
+
+.container-contact .wrapper-contact .link-contact{
+  /* background-color: rgb(76, 50, 205); */
+  width: 100%;
+  height: 100px; 
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
-  margin: 0px 0px 10px 0px;
-} 
-*/
-.container-contact  .wrapper-links{
-  /* background-color: #77771e; */
-  width: 80%;
-  font-size: 1.1em;
-  display: flex;
-  gap: 12px;
-  position: relative;
-  left: 1%;
-  margin: 0px 0px 30px 0px;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
-.container-contact .contact{
-  color:var(--white-smoke);
+.container-contact .wrapper-contact .link-contact .link{
+  /* background-color: rgb(248, 174, 45); */
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+
+.container-contact .wrapper-contact .link-contact .link .contact{
+  /* background-color: #332335; */
   font-size: 1.2em;
 }
 
-.container-contact  p{
-  font-size: 1.1em;
-  margin: 0
+.container-contact .wrapper-contact .link-contact .link p{
+  /* background-color: chartreuse; */
+  width: 68%;
+  font-size: 1em;
 }
 
 /* .......FORM....... */
 main .container-contact form{
-  background-color: #710c5e;
+  /* background-color: greenyellow; */
+  background-color: #44025b;
   width: 80%;
+  height: 390px;
   border-radius: 20px;
-  margin-top: 12%;
-  margin-bottom: 10%;
   padding: 10px;
-  margin: 20px 0px 40px 0px;
+  margin: 5% 0% 10% 0%;
 }
 
 .container-contact form fieldset{
   width: 90%;
-  background-color: #710c5e;
+  background-color: #44025b;
   display: flex;
   flex-direction: column;
 }
 
 .container-contact fieldset label{
-  /* background-color: #d23333; */
+  /* background-color: #32032b; */
   color: var(--white-smoke);
   width: 80%;
   font-size: 18px;
@@ -96,7 +112,7 @@ main .container-contact form{
 }
 
 form fieldset input{
-  /* background-color: #50fff9; */
+  background-color: var(--white-smoke);
   width: 98%;
   height: 30px;
   font-size: 18px;
@@ -110,7 +126,10 @@ textarea{
   resize: none;
   margin-bottom: 10%;
   margin:0px 0px 5px 0px;
+}
 
+form fieldset #message{
+  margin-bottom: 7%;
 }
 
 ::placeholder{
@@ -122,10 +141,11 @@ textarea{
 form button{
   width: 40%;
   height: 30px;
-  font-size: 14px;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 2px;
   margin: auto;
-  margin-top: 10px;
- 
+  margin-top: 4%;
 }
 
 /* *******************MEDIAS QUERIES******************* */
@@ -134,11 +154,135 @@ form button{
 
 @media (min-width: 768px){
   .container-contact #title-contact-me{
-  /* border: 1px solid black; */
-  font-size: 3em;
-  position: relative;
-  left: -25%;
-}
+    /* border: 1px solid black;  */
+    font-size: 3em;
+    position: relative;
+    left: -26%;
+    top: -3%;
+  }
+  
+  .container-contact .paragraph-contact{
+    /* background-color: #1d5a5a; */
+    width: 70%;
+    font-size: 1.99em;
+    font-weight: 400;
+    text-align: start;
+    line-height: 1.4;
+    position: relative;
+    left: -7.2%;
+    top: -3%;
+  }
+  
+  /* .............LINKS CONTACT............. */
+  .container-contact .wrapper-contact{
+    background-color: rgb(240, 50, 50);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .container-contact .wrapper-contact .link-contact{
+    background-color: rgb(76, 50, 205);
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+  }
+  
+  .container-contact .wrapper-contact .link-contact .link{
+    background-color: rgb(248, 174, 45);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  
+  
+  }
+  .container-contact .wrapper-contact .link-contact .link a .contact{
+    font-size: 50px;
+    background-color: #332335;
+    width: 100%;
+  }
+  
+  .container-contact .wrapper-contact .link-contact .link p{
+    font-size: 40px;
+    background-color: chartreuse;
+    width: 50%;
+  }
+
+/* .......FORM....... */
+  main .container-contact form{
+    background-color: #f5fff4;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    padding: 0;
+  }
+
+  .container-contact form fieldset{
+    width:40%;
+    margin: 0;
+  }
+
+  .container-contact form fieldset:nth-child(3),
+  .container-contact form fieldset:nth-child(4){
+    width:82.36%;
+  }
+
+  /* fffffff */
+  .container-contact fieldset label{
+    background-color: #d23333;
+    width: 80%;
+    font-size: 1.9em;
+    margin: auto;
+    margin:0% 0% 1% 2%;
+  }
+
+
+  form fieldset input{
+    background-color: #50fff9;
+    width: 98%;
+    height: 50px;
+    font-size: 18px;
+    margin:0% 0% 1% 1%;
+  }
+  
+  textarea{
+    width: 97%;
+    height: 60px;
+    font-size: 20px;
+    resize: none;
+    /* margin-bottom: 10%; */
+    margin:0% 0% 7% 0%;
+  }
+  
+  form fieldset #message{
+    margin-bottom: 7%;
+  }
+  
+  ::placeholder{
+    color: #b7b3b3;
+    text-align: center;
+    line-height: 3;
+  }
+
+  form button{
+    width: 30%;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: -2%;
+   
+  }
+
 
 }
 
@@ -152,4 +296,49 @@ form button{
 
 }
 /* ................MEDIA QUERIE 4K................... */
+
+
+/* 💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦 */
+/* SE HIZO UNA PRUEBA PARA ESTILAR EL SECTOR DE CONTACTOS */
+/* .container-contact .cajon{
+  background-color: rgb(240, 50, 50);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.container-contact .cajon .caja{
+  background-color: rgb(76, 50, 205);
+  width: 30%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+
+.container-contact .cajon .caja .cajita{
+  background-color: rgb(248, 174, 45);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+
+}
+.container-contact .cajon .caja .cajita .a .icono{
+  font-size: 50px;
+  background-color: #332335;
+  width: 100%;
+}
+
+.container-contact .cajon .caja .cajita .texto{
+  font-size: 40px;
+  background-color: chartreuse;
+  width: 50%;
+} */
+
+/* 💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦 */
 

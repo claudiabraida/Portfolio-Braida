@@ -1,6 +1,7 @@
 /* *******SECTION SKILLS******* */
 main .container-skills{
   /* background-color: #e64e4e; */
+  background: linear-gradient(#14091b,  #300326, #0B0B13);
   display: flex;
   flex-direction: column;
   align-items: center;

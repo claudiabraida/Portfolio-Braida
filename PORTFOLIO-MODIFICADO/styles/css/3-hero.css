@@ -1,14 +1,11 @@
 /* *****SECTION PRESENTATION HERO***** */
-/* html,
-body{
-  color: whitesmoke;
-  width: 100%;
-  height: 200%;
-  background-color: black;
-  
-} */
 /* overflow-x: hidden; */
 .container-hero-about{
+  /* background-image: url(./images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
   height: 360px;
   display: flex;
   flex-direction: column;
@@ -43,8 +40,9 @@ body{
 }
 
 .container-hero-about .hero-button-what-do-I-do-about{
-  color: red;
-  border: 2px solid red;
+  /* color: red;*/
+  border: 2px solid #fe29ec; 
+  background: linear-gradient(#181317,  #ad2c91, #201423);
   width: 43%;
   height: 30px;
   border-radius: 30px;

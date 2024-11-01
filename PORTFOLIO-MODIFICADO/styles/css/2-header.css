@@ -13,6 +13,7 @@ header{
 header .wrapper-logo-braida .logo-braida,
 header .wrapper-logo-menu .logo-menu{
   width: 90%;
+  border-radius: 50%;
   cursor: pointer;
 }
 
