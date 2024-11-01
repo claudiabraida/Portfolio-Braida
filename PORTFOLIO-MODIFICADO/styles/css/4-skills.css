@@ -8,44 +8,45 @@ main .container-skills{
 }
 
 .container-skills #title-skills{
-  border: 1px solid #fff1f1;
-  margin: 20px 0px 15px 0px;
+  /* border: 1px solid #fff1f1; */
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin: 20px 0px 4px 0px;
 }
 
 .container-skills .paragraph-skills{
-  border: 1px solid #eeeeed;
+  /* border: 1px solid #eeeeed; */
   width: 80%;
   font-family: var(--genos);
-  font-size: 0.90em;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 2px;
   line-height: 1.5;
-  margin: 0px 10px 20px 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 /* .......SKILLS....... */
 .container-skills .box-skills{
-  /* background-color: #691eda; */
+  /* background-color: #ff8d8d; */
   width: 100%;
-  height: 270px;
+  height: 470px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: flex-start;
+  align-content: center;
 }
 
 .container-skills .box-skills figure:nth-child(n){
-  border: 1px solid #88823b9f;
+  /* border: 1px solid #88823b9f; */
   /* box-shadow: inset 10px 8px 20px -12px; */
- 
-  /* background-size:50%;
-  background-position: center; */
-  /* background-color: brown; */
   width: 21%;
   height: 69px;
   border-radius: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 25px 10px;  
+  margin: 25px 46px;  
   /* A lo largo del html existen elementos que se repiten y se encuentran dentro
    de secciones diferentes, para dar estilos a ciertos eleentos sim que afecten
    al resto; se acude a la pseudo-clase nth-child() para especificar estilos
@@ -131,15 +132,15 @@ main .container-skills{
   }
 
  .container-skills .box-skills{
-    height: 1010px;
+    height: 500px;
     justify-content: center;
     gap: 60px;
   }
 
   .container-skills .box-skills figure:nth-child(n){
     background-size: 59%;
-    width: 30%;
-    height: 230px;
+    width: 20%;
+    height: 150px;
     margin: 1.9%;
   }
 
@@ -148,6 +149,8 @@ main .container-skills{
     font-size: 28px;
     top: 22%;
   }
+
+
 }
   
 /* ................MEDIA QUERIE DESKTOP................ */

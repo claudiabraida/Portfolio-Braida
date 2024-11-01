@@ -1,7 +1,7 @@
 /* *****FOOTER***** */
 footer{
   background-color: #c41414;
-  height: 190px;
+  height: 198px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,31 +11,32 @@ footer{
 
 /* ........ITEMS............ */
 footer .footer-links-items{
-  background-color: #eb3affe6;
+  /* background-color: #eb3affe6; */
   display: none;  /* links de las secciones (header-nav)*/
 }
 
 /* ........SOCIAL CONTACT............ */
 footer .footer-social-contact{
-   /* background-color: #c9b77c; */
+  /* background-color: #c9b77c; */
   width: 60%;
   display: flex;
-  justify-content: space-between;
-  margin: 26px 0px 0px 0px;
+  justify-content: center;
+  margin: 4% 0% 1%;
+  gap: 20px;
 }
 
 footer .footer-social-contact .social{
   color: var(--white-smoke);
-  font-size: 1.7em;
+  font-size: 2em;
   /* filter: drop-shadow(5px 25px 1px #b7ff00); */
 }
 
 /* ........COPYRIGTH............ */
-footer .footer-copyright,
-footer .paragraph-copyrigth{
-  /* background-color: #b0195d;  */
-  font-size: 1.1em;
-  line-height: 1.6;
+/* background-color: #b0195d;  */
+footer .paragraph-copyrigth,
+footer .text-copyright{
+  font-size: 1.4em;
+  line-height: 1;
 }
 
 /* *******************MEDIAS QUERIES******************* */
@@ -43,27 +44,77 @@ footer .paragraph-copyrigth{
 /* ................MEDIA QUERIE TABLET*................ */
 
 @media (min-width: 768px){
- footer{
-  height: 300px;
- }
+  footer{
+    height: 400px;
+  }
+  
+  footer .footer-links-items{
+    /* background-color: #eb3affe6; */
+    width: 90%;
+    font-size: 1.6em;
+    letter-spacing: 1;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 5%;
+    padding: 0;
+  }
 
- footer .footer-links-items{
-  background-color: #eb3affe6;
-  width: 90%;
-  font-size: 1.6em;
-  display: flex;
-  justify-content:space-evenly;
-  padding: 0;
+  footer .footer-social-contact{
+    gap: 50px;
+    margin-top: 2%;
+  }
+  
+  footer .footer-social-contact .social{
+    font-size: 2.8em;
+  }
+
+  .footer-copyright{
+    /* background-color: blueviolet; */
+    margin-top: -1%;
+  }
+
+  footer .paragraph-copyrigth,
+  footer .text-copyright{
+  /* background-color: #b0195d; */
+  font-size: 1.9em;
+  line-height: 1;
 }
-    
+
 }
-
-
 
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
- 
+  footer{
+    height: 65vh;
+  }
   
+  footer .footer-links-items{
+    /* background-color: #eb3affe6; */
+    width: 70%;
+    font-size: 1.6em;
+    letter-spacing: 8;
+    margin-top: 4%;
+  }
+
+  footer .footer-social-contact{
+    gap: 50px;
+    margin-top: 1%;
+  }
+  
+  footer .footer-social-contact .social{
+    font-size: 3em;
+  }
+
+  .footer-copyright{
+    /* background-color: blueviolet; */
+    margin-top: -1%;
+  }
+
+  footer .paragraph-copyrigth,
+  footer .text-copyright{
+  /* background-color: #b0195d;  */
+  font-size: 1.70em;
+}
 
 }
 /* ................MEDIA QUERIE 4K................... */

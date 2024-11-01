@@ -4,53 +4,66 @@ main #container-projects{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
-  
-  /* height: 500px; */
+  /* align-items: center; */
+  height: auto;
 }
 
+
+
 main #container-projects #title-projects{
-  background-color: #6f51af00;
-  width: 10%;
+  background-color: #6f51aff2;
+  width: 9%;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-weight: 300;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 1.9em;
   margin: 0;
+  z-index: 1;
+  /* position: sticky; */
+  top: 390px;
+  left: 5%;
+  
   /* margin:12px 15px 1px; */
 }
 
 #container-projects .paragraph-projects{
   border: 1px solid #b5ecb2;
   width: 70%;
-  letter-spacing: 0.3px;
-  
+  font-size: 1em;
+  font-weight: 4300;
+  line-height: 1.9;
+  letter-spacing: 1.3px;
+  position: relative;
+  bottom: 292px;
+  left: 60px;
 }
 
 /* .....CARDS PROJECTS..... */
 
 main #container-projects .wrapper-cards-projects{
-  /* background-color: #1b39e6; */
+  background-color: #3b629c;
   width: 100%;
+  /**/ height: 2400px; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
- 
- 
+
+  position: relative;
+  top: -480px;
+  /* left: 20px; */
 } 
 
 #container-projects .wrapper-cards-projects .card{
   /* background-color: #d3269f; */
-  width: 90%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
   border-radius: 40px;
-  box-shadow:  20px 10px  68px -60px #2e5996 ;
+  /* box-shadow:  20px 10px  68px -60px #2e5996 ; */
+  
 }
 
 main #container-projects .wrapper-cards-projects 
@@ -58,16 +71,38 @@ main #container-projects .wrapper-cards-projects
 .image-project-2,
 .image-project-3,
 .image-project-4{
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
   margin: 8% 3% ;
-  box-shadow: 0px 40px 50px #182c49 ;
+  box-shadow: 30px 40px 30px -10px #000000;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: slide;
+  animation-range: entry 9% cover 50%;
+  animation-fill-mode: both;
 } 
 
+@keyframes slide {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+  
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+
+}
+
+
 .wrapper-cards-projects .card .text-project{
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   margin: -6% 1% ;
+  z-index: 1;
+  margin-top: 1%;
   /* position: relative; */
   /* left: 5%; */
 }
@@ -85,5 +120,100 @@ main #container-projects .wrapper-cards-projects
 .project-4{
   display: none;
 } */
+
+/* *******************MEDIAS QUERIES******************* */
+
+/* ................MEDIA QUERIE TABLET*................ */
+
+@media (min-width: 768px){
+  main #container-projects #title-projects{
+    background-color: #714ebcfb;
+    width: 9%;
+    font-size: 4em;
+    align-self: flex-start;
+    /* position: relative;
+    left: 3%; */
+
+  }
+  
+  #container-projects .paragraph-projects{
+    width: 90%;
+    background-color: red;
+    font-size: 2em;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    
+  }
+  
+  /* .....CARDS PROJECTS..... */
+  
+  main #container-projects .wrapper-cards-projects{
+    /* background-color: #1b39e6; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  } 
+  
+  #container-projects .wrapper-cards-projects .card{
+    /* background-color: #d3269f; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 40px;
+    box-shadow:  20px 10px  68px -60px #2e5996 ;
+  }
+  
+  main #container-projects .wrapper-cards-projects 
+  .image-project-1,
+  .image-project-2,
+  .image-project-3,
+  .image-project-4{
+    width: 80%;
+  } 
+  
+  .wrapper-cards-projects .card .text-project{
+    font-size: 3em;
+    text-align: center;
+    margin: -6% 1% ;
+    z-index: 1;
+    /* position: relative; */
+    /* left: 5%; */
+  }
+  
+  
+}
+  
+/* ................MEDIA QUERIE DESKTOP................ */
+@media (min-width:1024px){
+  main #container-projects{
+    background-color: #ff14ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+  }
+
+  #container-projects .wrapper-cards-projects .card{
+    background-color: #91d326;
+    width: 90%;
+    box-shadow:  20px 10px  68px -60px #2e5996 ;
+  }
+  
+  #container-projects .wrapper-cards-projects .card{
+    /* background-color: #d3269f; */
+    width: 10%;
+    
+    /* box-shadow:  20px 10px  68px -60px #2e5996 ; */
+    
+  }
+}
+
+/* ................MEDIA QUERIE 4K................... */
 
 

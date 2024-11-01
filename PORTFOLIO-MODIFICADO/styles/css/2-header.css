@@ -1,26 +1,32 @@
 /* *******HEADER******* */
 header{
+  /* background-color: blue; */
+  /* background: linear-gradient(#0b0a10, #9F1E83, #0B0B13); */
   width: 100%;
-  background: linear-gradient(#0b0a10, #9F1E83, #0B0B13);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 30%;
+  gap: 60%;
 }
 
 header .wrapper-logo-braida .logo-braida,
 header .wrapper-logo-menu .logo-menu{
-  width: 50%;
-  padding: 6px;
+  width: 90%;
   cursor: pointer;
+}
+
+header .wrapper-logo-braida .logo-braida{
+  margin: 20% 6% 20% 25%;
+}
+
+header .wrapper-logo-menu .logo-menu{
+  margin: 6% 25% 6% -15% ;
 }
 
 header .wrapper-menu-nav{
   display: none;
-  width: 100%;
 }
-
 
 /* *******************MEDIAS QUERIES******************* */
 
@@ -28,62 +34,75 @@ header .wrapper-menu-nav{
 
 @media (min-width: 768px){
   header{
-    gap: 20px;
+    background-color: red;
+    justify-content:flex-start;
+    gap: 0px;
+    /* z-index: 2; par si se utiliza
+    position:sticky;
+    position: fixed; */ 
   }
-
+  header .wrapper-logo-braida{
+    /* background-color: aquamarine; */
+    width: 16%;
+    height:120px;
+  }
+  
   header .wrapper-logo-braida .logo-braida{
-    width: 20%;
+    width:65%;
+    margin: 16% 2% 0% 9%;
+    border-radius: 50%;
   }
   
   header .wrapper-logo-menu .logo-menu{
     display: none;
   }
   
-  /* .......NAV....... */
+  /* .......NAV querie 768....... */
   header .wrapper-menu-nav{
-    background-color: #ff9500;
-
+    /* background-color: #ff9500; */
+    width: 80%;
     display: flex;
   }
   
   header .wrapper-menu-nav ul{ 
-    background-color: #68ef29fa;
+    /* background-color: #68ef29fa; */
     width: 100%;
-    font-size: 18px;
+    font-size: 1.65em;
+    font-weight:500;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
   }
     
 }
 
-
-
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
-  header{
-    justify-content: center;
-    gap:4%;
-  
-  }
-  
-  
   header .wrapper-logo-braida{
-    width: 100px;
+    background-color: blue;
+    width: 173px;
+    height: 143px;
   }
-
+  
   header .wrapper-logo-braida .logo-braida{
-    width: 110px;
+    width: 100px;
+    margin: 12% 2% 1% 22%;
   }
 
+  /* .......NAV.-querie 1024...... */
   header .wrapper-menu-nav{
-    width: 70%;
-    font-size: 50px;
-    display: flex;
+    /* background-color: green; */
+    width: 78%;
+
   }
 
   header .wrapper-menu-nav ul{
-    font-size: 26px;
+    /* background-color: violet; */
+    font-size: 2em;
+    justify-content: center;
+    gap: 43px;
   }
-
-  
 
 }
 /* ................MEDIA QUERIE 4K................... */
