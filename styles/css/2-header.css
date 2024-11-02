@@ -3,6 +3,7 @@ header{
   /* background-color: blue; */
   /* background: linear-gradient(#0b0a10, #9F1E83, #0B0B13); */
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,29 +83,32 @@ header .wrapper-menu-nav{
 
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
+  /* header{
+  background-color: blue;
+  } color para ubicación de los elementos*/
+
   header .wrapper-logo-braida{
-    /* background-color: blue; */
-    width: 173px;
+    /* background-color: aquamarine; */
+    width: 15%;
     height: 143px;
   }
   
   header .wrapper-logo-braida .logo-braida{
-    width: 100px;
-    margin: 12% 2% 1% 22%;
+    width: 70%;
+    margin: 10% 2% 1% 10%;
   }
 
   /* .......NAV.-querie 1024...... */
   header .wrapper-menu-nav{
     /* background-color: green; */
-    width: 78%;
-
+    width: 83%;
   }
 
   header .wrapper-menu-nav ul{
     /* background-color: violet; */
-    font-size: 2em;
-    justify-content: center;
-    gap: 43px;
+    font-size: 2.1em;
+    justify-content: flex-start;
+    gap: 40px;
   }
 }
 /* ................MEDIA QUERIE 4K................... */
