@@ -35,13 +35,15 @@ header .wrapper-menu-nav{
 
 @media (min-width: 768px){
   header{
-    background-color: red;
+    /* background-color: red; */
+    /* background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13); */
     justify-content:flex-start;
     gap: 0px;
     /* z-index: 2; par si se utiliza
     position:sticky;
     position: fixed; */ 
   }
+
   header .wrapper-logo-braida{
     /* background-color: aquamarine; */
     width: 16%;
@@ -81,7 +83,7 @@ header .wrapper-menu-nav{
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
   header .wrapper-logo-braida{
-    background-color: blue;
+    /* background-color: blue; */
     width: 173px;
     height: 143px;
   }
@@ -104,6 +106,5 @@ header .wrapper-menu-nav{
     justify-content: center;
     gap: 43px;
   }
-
 }
 /* ................MEDIA QUERIE 4K................... */
