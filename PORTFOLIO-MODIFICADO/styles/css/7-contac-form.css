@@ -175,92 +175,96 @@ form button{
   
   /* .............LINKS CONTACT............. */
   .container-contact .wrapper-contact{
-    background-color: rgb(240, 50, 50);
+    /* background-color: rgb(240, 50, 50); */
     width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
+    align-items: center;
   
   }
   
   .container-contact .wrapper-contact .link-contact{
-    background-color: rgb(76, 50, 205);
-    width: 30%;
+    /* background-color: rgb(76, 50, 205); */
+    width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20%;
+    gap: 6%;
   }
   
   .container-contact .wrapper-contact .link-contact .link{
-    background-color: rgb(248, 174, 45);
-    width: 80%;
+    /* background-color: rgb(248, 174, 45); */
+    width: 88%;
     display: flex;
-    justify-content: center;
-  
-  
+    justify-content: flex-start;
+    gap: 20px;
   }
+
   .container-contact .wrapper-contact .link-contact .link a .contact{
-    font-size: 50px;
-    background-color: #332335;
-    width: 100%;
+    /* background-color: #9d1fad; */
+    font-size: 2em;
   }
   
   .container-contact .wrapper-contact .link-contact .link p{
-    font-size: 40px;
-    background-color: chartreuse;
-    width: 50%;
+    /* background-color: chartreuse; */
+    width: 89%;
+    font-size: 1.9em;
   }
 
 /* .......FORM....... */
   main .container-contact form{
-    background-color: #f5fff4;
-    width: 90%;
+    /* background-color: #27ff14; */
+    width: 80%;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 12%;
-    padding: 0;
+  
   }
 
   .container-contact form fieldset{
-    width:40%;
+    width: 41%;
     margin: 0;
+    padding: 0;
   }
 
   .container-contact form fieldset:nth-child(3),
   .container-contact form fieldset:nth-child(4){
-    width:82.36%;
+    /* background-color: black; */
+    width:82.3%;
   }
 
   /* fffffff */
   .container-contact fieldset label{
-    background-color: #d23333;
+    /* background-color: #d23333; */
     width: 80%;
     font-size: 1.9em;
-    margin: auto;
-    margin:0% 0% 1% 2%;
+    margin-left: 3%;
   }
 
 
   form fieldset input{
-    background-color: #50fff9;
-    width: 98%;
+    /* background-color: #50fff9; */
+    width: 95%;
     height: 50px;
-    font-size: 18px;
-    margin:0% 0% 1% 1%;
+    font-size: 1.6em;
+    margin: auto;
+    /* margin:0% 0% 1% 1%; */
   }
   
   textarea{
-    width: 97%;
-    height: 60px;
+    width: 95%;
+    height: 50px;
     font-size: 20px;
     resize: none;
+    margin: auto;
     /* margin-bottom: 10%; */
-    margin:0% 0% 7% 0%;
+    /* margin:0% 0% 7% 0%; */
+    
   }
   
   form fieldset #message{
@@ -275,22 +279,18 @@ form button{
 
   form button{
     width: 30%;
-    height: 40px;
+    /* height: 40px; */
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 2px;
     margin-top: -2%;
-   
   }
 
 }
 
-
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
   
-
-
 }
 /* ................MEDIA QUERIE 4K................... */
 

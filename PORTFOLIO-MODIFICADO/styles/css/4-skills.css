@@ -13,7 +13,7 @@ main .container-skills{
   font-size: 1em;
   letter-spacing: 3px;
   font-weight: 700;
-  margin: 20px 0px 4px 0px;
+  margin: 15% 0% 4% 0%;
 }
 
 .container-skills .paragraph-skills{
@@ -24,14 +24,13 @@ main .container-skills{
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 1.5;
-  margin: 10px 10px 10px 10px;
+  margin: 6% 10% 5% 10%;
 }
 
 /* .......SKILLS....... */
 .container-skills .box-skills{
   /* background-color: #ff8d8d; */
   width: 100%;
-  height: 470px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

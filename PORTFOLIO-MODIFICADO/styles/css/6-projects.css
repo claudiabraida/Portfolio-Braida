@@ -7,8 +7,6 @@ main #container-projects{
   /* align-items: center; */
 }
 
-
-
 main #container-projects #title-projects{
   /* background-color: #6f51aff2; */
   width: 20%;
@@ -19,10 +17,10 @@ main #container-projects #title-projects{
   font-weight: 500;
   font-size: 3em;
   margin: 0;
-  z-index: 1;
+  /* z-index: 1;
   position: relative;
   top: 20%;
-  left: -5%;
+  left: -5%; */
 }
 
 /* .....CARDS PROJECTS..... */
@@ -38,11 +36,6 @@ main #container-projects .wrapper-cards-projects{
   position: relative;
   top: -1450px;
   z-index: -1;
-
-
-  /* position: relative;
-  top: -480px; */
-  /* left: 20px; */
 } 
 
 #container-projects .wrapper-cards-projects .card{
@@ -135,10 +128,7 @@ main #container-projects .wrapper-cards-projects
     align-self: flex-start;
     /* position: relative;
     left: 3%; */
-
   }
-  
- 
   
   /* .....CARDS PROJECTS..... */
   

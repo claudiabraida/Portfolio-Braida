@@ -5,8 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
-  background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
-  height: 360px;
+  background-color: rgb(69, 143, 207);
+  /* background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13); */
+  height: 460px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -48,7 +49,7 @@
   border-radius: 30px;
   text-align: center;
   line-height: 1.9;
-  margin-top: 20px;
+  margin-top: 15%;
 }
 
 /* *******************MEDIAS QUERIES******************* */
