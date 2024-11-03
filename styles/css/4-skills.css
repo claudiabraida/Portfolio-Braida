@@ -33,20 +33,32 @@ main .container-skills{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
+  /* gap: 1px 1px; */
 }
 
-.container-skills .box-skills figure:nth-child(n){
-  /* border: 1px solid #88823b9f; */
-  /* box-shadow: inset 10px 8px 20px -12px; */
-  width: 21%;
-  height: 60px;
-  border-radius: 100%;
+.container-skills .box-skills .wrapper-skill{
+  /* background-color: #1a0799; */
+  width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin: 25px 46px;  
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+.container-skills .box-skills .wrapper-skill figure:nth-child(n){
+  /* border: 2px solid #ffeb13; */
+  /* box-shadow: inset 10px 8px 20px -12px; */
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+  /* margin: 25px 46px;   */
   /* A lo largo del html existen elementos que se repiten y se encuentran dentro
    de secciones diferentes, para dar estilos a ciertos eleentos sim que afecten
    al resto; se acude a la pseudo-clase nth-child() para especificar estilos
@@ -54,44 +66,44 @@ main .container-skills{
 }
 
 .container-skills .box-skills .skill-logo-html{
-  background: no-repeat 50% 54% /contain url(./images-logos/1-html-logo.png);
-  background-size: 60%;
+  background: no-repeat 50% 60% /contain url(./images-logos/1-html-logo.png);
+  background-size: 40px;
   box-shadow: inset 20px -40px 22px -30px #a45a1d;
 
 }
 
 .container-skills .box-skills .skill-logo-css{
-  background: no-repeat 50% 54% /contain url(./images-logos/2-css-logo.png);
-  background-size: 60%;
+  background: no-repeat 50% 60% /contain url(./images-logos/2-css-logo.png);
+  background-size: 40px;
   box-shadow: inset 20px -40px 22px -30px #1a0799;
 
 }
 
 .container-skills .box-skills .skill-logo-js{
-  background: no-repeat 50% 54% /contain url(./images-logos/3-js-logo.png);
-  background-size: 60%;
+  background: no-repeat 50% 50% /contain url(./images-logos/3-js-logo.png);
+  background-size: 40px;
   box-shadow: inset 20px -40px 22px -30px #837709;
 
 
 }
 
 .container-skills .box-skills .skill-logo-react{
-  background: no-repeat 50% 54% /contain url(./images-logos/4-react-logo.png);
-  background-size: 60%;
+  background: no-repeat 50% 57% /contain url(./images-logos/4-react-logo.png);
+  background-size: 45px;
   box-shadow: inset 20px -40px 22px -30px #0d988d;
 
 }
 
 .container-skills .box-skills .skill-logo-sass{
-  background: no-repeat 50% 54% /contain url(./images-logos/5-sass-logo.png);
-  background-size: 60%;
+  background: no-repeat 55% 54% /contain url(./images-logos/5-sass-logo.png);
+  background-size: 45px;
   box-shadow: inset 20px -40px 22px -30px #d048ee;
 
 }
 
 .container-skills .box-skills .skill-logo-git{
   background: no-repeat 50% 54% /contain url(./images-logos/6-git-logo.png);
-  background-size: 60%;
+  background-size: 43px;
   box-shadow: inset 20px -40px 22px -30px #f62020;
 
 
@@ -101,21 +113,35 @@ main .container-skills{
   display: flex;
   flex-direction: column;
   justify-content: flex-end; */
-  /*Se omiten imágenes en html y se las coloca desde la propiedad background-image 
+  /*Se omiten imágenes en html y se las coloca desde la propiedad background-image
     Se utiliza shorthand en la propiedad background-image para reducir código
    */
 }
 
-.container-skills .box-skills .name-skill-logo{
+.container-skills .box-skills .wrapper-skill .name-skill-logo{
   /* background-color: red; */
-  font-size: 12px;
-  color: whitesmoke;
-  position: relative;
-  top: 35%;
+  width: 70%;
+  color: var(--white-smoke);
+  font-size: 0.99em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+  /* position: relative;
+  top: 35%; */
 }
 
 /* *******************MEDIAS QUERIES******************* */
 
+/* ................MEDIA QUERIE MOBILE 360*................ */
+/* @media (min-width: 360px){
+  .container-skills .box-skills figure:nth-child(n){
+    width: 23%;
+    height: 80px;
+    border: 2px solid red;
+  }
+
+} */
 /* ................MEDIA QUERIE TABLET*................ */
 
 @media (min-width: 768px){
@@ -131,13 +157,23 @@ main .container-skills{
     margin: 0px 30px 50px 30px;
   }
 
- .container-skills .box-skills{
-    height: 500px;
-    justify-content: center;
-    gap: 60px;
+  .container-skills .box-skills .wrapper-skill{
+    /* background-color: #1a0799; */
+    width: 25%;
+    margin: 10px 20px;
   }
 
-  .container-skills .box-skills figure:nth-child(n){
+
+  .container-skills .box-skills .wrapper-skill figure:nth-child(n){
+    /* border: 2px solid #ffeb13; */
+    width: 110px;
+    height: 110px;
+  }
+
+  .container-skills .box-skills .wrapper-skill figure{
+    background-size: 70px;
+  }
+  /* .container-skills .box-skills figure:nth-child(n){
     background-size: 59%;
     width: 20%;
     height: 150px;
@@ -145,14 +181,14 @@ main .container-skills{
   }
 
   .container-skills .box-skills .name-skill-logo{
-    /* background-color: red; */
+    background-color: red;
     font-size: 28px;
     top: 22%;
-  }
+  } */
 
 
 }
-  
+
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
   .container-skills #title-skills{
@@ -167,20 +203,21 @@ main .container-skills{
     line-height: 1.9;
     margin: 0px 30px 50px 30px;
   }
-
- .container-skills .box-skills{
-    height: 1300px;
+  .container-skills .box-skills .wrapper-skill{
+    /* background-color: #1a0799; */
+    width: 25%;
+    margin: 10px 20px;
   }
 
-  .container-skills .box-skills figure:nth-child(n){
-    background-size: 59%;
-    height: 300px;
+
+  .container-skills .box-skills .wrapper-skill figure:nth-child(n){
+    /* border: 2px solid #ffeb13; */
+    width: 190px;
+    height: 190px;
   }
 
-  .container-skills .box-skills .name-skill-logo{
-    /* background-color: red; */
-    font-size: 2em;
-    top: 25%;
+  .container-skills .box-skills .wrapper-skill figure{
+    background-size: 90px;
   }
 }
 

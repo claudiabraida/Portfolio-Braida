@@ -1,41 +1,38 @@
 /* *****SECTION PROYECTS***** */
 main #container-projects{
-  /* background-color: #475352; */
+  /**/ height:1900px; 
+  background-color: #39dcce;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 main #container-projects #title-projects{
-  /* background-color: #6f51aff2; */
-  width: 20%;
-  height: 19x;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  letter-spacing: 53px;
+  background-color: #6f51aff2;
+  text-transform: uppercase;
+  /* writing-mode: vertical-lr; */
+  
+  /* letter-spacing: 180px; */
   font-weight: 500;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0;
-  /* z-index: 1;
-  position: relative;
-  top: 20%;
-  left: -5%; */
+ z-index: 2;
+  /**/  
 }
 
 /* .....CARDS PROJECTS..... */
 
 main #container-projects .wrapper-cards-projects{
   /* background-color: #cacd20; */
-  background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
+  /* background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13); */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  /* align-items: start; */
   gap: 30px;
-  position: relative;
-  top: -1450px;
-  z-index: -1;
+ 
+  /*  /* z-index: -1; */
 } 
 
 #container-projects .wrapper-cards-projects .card{
@@ -93,13 +90,12 @@ main #container-projects .wrapper-cards-projects
 }
 
 #container-projects .paragraph-projects{
-  border: 1px solid #b5ecb2;
+  border: 1px solid #1a5917;
   width: 70%;
   font-size: 1em;
   font-weight: 4300;
   line-height: 1.9;
   letter-spacing: 1.3px;
-
 }
 
 /* ESTILOS PARA VIDEOS */
