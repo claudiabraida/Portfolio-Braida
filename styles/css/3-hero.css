@@ -1,0 +1,143 @@
+/* *****SECTION PRESENTATION HERO***** */
+/* overflow-x: hidden; */
+.container-hero-about{
+  background-image: url(./images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(69, 143, 207);
+  /* background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13); */
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  /* margin-bottom: 30px; */
+}
+
+.container-hero-about #hero-title-about{
+  width: 100%;
+  color: aliceblue;
+  font-size: 1.99em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container-hero-about .hero-content-about{
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.container-hero-about .hero-content-about .hero-paragraph-about{
+  width: 90%;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 3px;
+  letter-spacing: 1.4px;
+  margin: 0;
+}
+
+.container-hero-about .hero-button-what-do-I-do-about{
+  /* color: red;*/
+  border: 2px solid #fe29ec; 
+  background: linear-gradient(#181317,  #ad2c91, #201423);
+  width: 43%;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 1.9;
+}
+
+/* *******************MEDIAS QUERIES******************* */
+
+/* ................MEDIA QUERIE TABLET................ */
+
+@media (min-width:768px){
+  /* .container-hero-about{
+    height: 750px;
+  } */
+  
+  .container-hero-about #hero-title-about{
+    font-size: 4em;
+  }
+  
+  .container-hero-about .hero-content-about 
+  .hero-paragraph-about{
+    width: 70%;
+    font-size: 3em;
+    line-height: 1.9;
+  }
+
+  .container-hero-about .hero-button-what-do-I-do-about{
+    width: 25%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 2.4;
+    position: relative;
+    top: -70px;
+  }
+
+}
+
+/* ................MEDIA QUERIE DESKTOP................ */
+@media (min-width:1024px){
+
+  .container-hero-about{
+    height: 920px;
+  }
+  .container-hero-about #hero-title-about{
+    font-size: 80px;
+  }
+
+  .container-hero-about .hero-content-about 
+  .hero-paragraph-about{
+    /* background-color: blueviolet; */
+    width: 100%;
+    font-size: 57px;
+    line-height: 1.3;
+  }
+
+  .container-hero-about .hero-button-what-do-I-do-about{
+    width: 30%;
+    height: 80px;
+    font-size: 2.3em;
+    line-height: 2.1;
+    /* margin-top: 2%; */
+  }
+}
+
+/* ................MEDIA QUERIE 4K................... */
+@media (min-width:1440px){
+  .container-hero-about #hero-title-about{
+    font-size: 120px;
+    color: red;
+  }
+
+
+}
+/* main .container-hero-about{
+  background-color:  rgb(215, 52, 15);
+}
+
+.container-hero-about #hero-title-about{
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.container-hero-about .hero-content-about{
+  background-color:  rgb(226, 43, 180);
+}
+
+.hero-content-about .hero-paragraph-about{
+  border: 1px solid rgb(255, 252, 245);
+}
+
+.hero-content-about .hero-button-what-do-I-do-about{
+  border: 1px solid rgb(249, 249, 249);
+} */
+ 
