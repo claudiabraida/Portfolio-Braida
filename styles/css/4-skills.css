@@ -1,11 +1,13 @@
 /* *******SECTION SKILLS******* */
 main .container-skills{
   /* background-color: #e64e4e; */
+  /* background: linear-gradient(#180931,  #072f3e,  #52a0cd, #0b232c); */
   background: linear-gradient(#14091b,  #300326, #0B0B13);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: -25%;
 }
 
 .container-skills #title-skills{
@@ -35,7 +37,6 @@ main .container-skills{
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  /* gap: 1px 1px; */
 }
 
 .container-skills .box-skills .wrapper-skill{
@@ -47,11 +48,13 @@ main .container-skills{
   align-items: center;
   margin: 10px 20px;
 }
+
+
 .container-skills .box-skills .wrapper-skill figure:nth-child(n){
   /* border: 2px solid #ffeb13; */
   /* box-shadow: inset 10px 8px 20px -12px; */
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   margin: 0;
   padding: 0;
@@ -67,52 +70,38 @@ main .container-skills{
 
 .container-skills .box-skills .skill-logo-html{
   background: no-repeat 50% 60% /contain url(./images-logos/1-html-logo.png);
-  background-size: 40px;
+  background-size: 30px;
   box-shadow: inset 20px -40px 22px -30px #a45a1d;
-
 }
 
 .container-skills .box-skills .skill-logo-css{
   background: no-repeat 50% 60% /contain url(./images-logos/2-css-logo.png);
-  background-size: 40px;
+  background-size: 30px;
   box-shadow: inset 20px -40px 22px -30px #1a0799;
-
 }
 
 .container-skills .box-skills .skill-logo-js{
   background: no-repeat 50% 50% /contain url(./images-logos/3-js-logo.png);
-  background-size: 40px;
+  background-size: 30px;
   box-shadow: inset 20px -40px 22px -30px #837709;
-
-
 }
 
 .container-skills .box-skills .skill-logo-react{
   background: no-repeat 50% 57% /contain url(./images-logos/4-react-logo.png);
-  background-size: 45px;
+  background-size: 35px;
   box-shadow: inset 20px -40px 22px -30px #0d988d;
-
 }
 
 .container-skills .box-skills .skill-logo-sass{
   background: no-repeat 55% 54% /contain url(./images-logos/5-sass-logo.png);
-  background-size: 45px;
+  background-size: 35px;
   box-shadow: inset 20px -40px 22px -30px #d048ee;
-
 }
 
 .container-skills .box-skills .skill-logo-git{
   background: no-repeat 50% 54% /contain url(./images-logos/6-git-logo.png);
-  background-size: 43px;
+  background-size: 33px;
   box-shadow: inset 20px -40px 22px -30px #f62020;
-
-
-  /* border: 1px solid red;
-  width: 30%;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; */
   /*Se omiten imágenes en html y se las coloca desde la propiedad background-image
     Se utiliza shorthand en la propiedad background-image para reducir código
    */
@@ -127,31 +116,20 @@ main .container-skills{
   text-align: center;
   margin-bottom: 20px;
   padding: 0;
-  /* position: relative;
-  top: 35%; */
 }
 
 /* *******************MEDIAS QUERIES******************* */
 
-/* ................MEDIA QUERIE MOBILE 360*................ */
-/* @media (min-width: 360px){
-  .container-skills .box-skills figure:nth-child(n){
-    width: 23%;
-    height: 80px;
-    border: 2px solid red;
-  }
-
-} */
 /* ................MEDIA QUERIE TABLET*................ */
 
 @media (min-width: 768px){
   .container-skills #title-skills{
-    font-size: 3em;
-    margin: 10px 0px 40px 0px;
+    font-size: 2em;
+    margin: 35% 0% 8% 0%;
   }
 
   .container-skills .paragraph-skills{
-    width: 80%;
+    width: 88%;
     font-size: 2.3em;
     line-height: 1.9;
     margin: 0px 30px 50px 30px;
@@ -163,7 +141,6 @@ main .container-skills{
     margin: 10px 20px;
   }
 
-
   .container-skills .box-skills .wrapper-skill figure:nth-child(n){
     /* border: 2px solid #ffeb13; */
     width: 110px;
@@ -173,42 +150,34 @@ main .container-skills{
   .container-skills .box-skills .wrapper-skill figure{
     background-size: 70px;
   }
-  /* .container-skills .box-skills figure:nth-child(n){
-    background-size: 59%;
-    width: 20%;
-    height: 150px;
-    margin: 1.9%;
+
+  .container-skills .box-skills .wrapper-skill .name-skill-logo{
+    /* background-color: red; */
+    font-size: 1.3em;
   }
-
-  .container-skills .box-skills .name-skill-logo{
-    background-color: red;
-    font-size: 28px;
-    top: 22%;
-  } */
-
 
 }
 
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
   .container-skills #title-skills{
-    border: 1px solid #fff1f1;
+    /* border: 1px solid #fff1f1; */
     font-size: 4em;
-    margin: 50px 0px 40px 0px;
+    margin: 40% 0% 5% 0%;
   }
 
   .container-skills .paragraph-skills{
-    border: 1px solid #eeeeed;
+    /* border: 1px solid #eeeeed; */
     font-size: 3em;
     line-height: 1.9;
     margin: 0px 30px 50px 30px;
   }
+
   .container-skills .box-skills .wrapper-skill{
     /* background-color: #1a0799; */
     width: 25%;
-    margin: 10px 20px;
+    margin: 40px 40px;
   }
-
 
   .container-skills .box-skills .wrapper-skill figure:nth-child(n){
     /* border: 2px solid #ffeb13; */
@@ -218,6 +187,11 @@ main .container-skills{
 
   .container-skills .box-skills .wrapper-skill figure{
     background-size: 90px;
+  }
+
+  .container-skills .box-skills .wrapper-skill .name-skill-logo{
+    /* background-color: red; */
+    font-size: 2.4em;
   }
 }
 

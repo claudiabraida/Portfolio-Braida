@@ -23,7 +23,7 @@
         <li><a class="about" href="#hero-title-about">SOBRE MÍ</a></li>
         <li><a class="title-skills" href="#title-skills">CONOCIMIENTOS</a></li>
         <li><a class="projects" href="#title-projects">PROYECTOS</a></li>
-        <li><a class="contact" href="#title-contact-me">CONTACTO</a></li>
+        <li><a class="contact" href="#container-contact">CONTACTO</a></li>
       </ul>
     </nav>
   </header>
@@ -31,17 +31,19 @@
   <!-- ..............MAIN......... -->
   <!-- ***********HERO********** -->
   <main>
-    <section class="container-hero-about" ><!-- INSERTAR IMAGEN HERO DESDE CSS/BACKGROUND-IMAGE -->
-      <img src="./css/styles/" alt="">
-      <h1 id="hero-title-about">AQUI VA IMAGEN PARA EL HERO HOLA SOY CLAUDIA BRAIDA! - HOLA SOY CLAUDIA BRAIDA!</h1>
+    <section class="container-hero-about">
+      <h1 id="hero-title-about">&nbsp;</h1>
+      <p class="hero-title-claudia">claudia</p>
+      <p class="hero-title-braida">braida</p>
       <div class="hero-content-about">
         <p class="hero-paragraph-about">Desarrolladora Front End</p>
         <p class="hero-paragraph-about">apasionada del Diseño</p>
         <p class="hero-paragraph-about">y mente curiosa</p>
-        <a class="hero-button-what-do-I-do-about" href="#container-projects">LO QUE HAGO</a>
+        <a class="hero-what-do-I-do-about" href="#container-projects">LO QUE HAGO</a>
       </div>
     </section>
-    
+    <!-- INSERTAR IMAGEN HERO DESDE CSS/BACKGROUND-IMAGE -->
+      <!-- <h1 id="hero-title-about">hola soy claudia braida!-hola soy claudia braida!</h1> -->
     <!-- ***********SKILLS********** -->
     <section class="container-skills">
       <h2 id="title-skills">MIS CONOCIMIENTOS</h2>
@@ -135,18 +137,19 @@
           <figcaption class="text-project">Landing evento 2 Cellos</figcaption>
         </figure>
       </div>
-      <p class="paragraph-projects">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi aut omnis hic rerum alias fugit unde esse repudiandae, earum voluptates. Itaque quaerat repellendus asperiores deserunt incidunt beatae eum fugiat sint!
-      </p>
+      <!-- <p class="paragraph-projects">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi aut omnis hic rerum alias fugit unde esse repudiandae, earum voluptates. Itaque quaerat repellendus asperiores deserunt incidunt beatae eum fugiat sint!
+      </p> -->
     </section>
 
-    <!-- ***********CONTACT FORM********** -->
-    <section class="container-contact">
-      <h2 id="title-contact-me">Contactame</h2>
-      <p class="paragraph-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quos nobis reiciendis temporibus dolores dicta iure debitis expedita provident ab libero quia, quidem repellat! Ab quod nostrum nobis placeat!
-      </p>
+    <!-- ***********CONTACT FORM********** --><!-- .......CONTACT........ -->
+    <section id="container-contact">
+      <h2 class="title-contact-me">Contactame</h2>
       
-      <!-- .......CONTACT........ -->
+      <!-- <div class="wrapper-paragraph-contact"></div> -->
       <div class="wrapper-contact">
+        <p class="paragraph-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quos nobis reiciendis temporibus dolores dicta iure debitis expedita provident ab libero quia, quidem repellat! Ab quod nostrum nobis placeat!</p>
+        
+        
         <div class="link-contact">
           <div class="link">
             <a href="https://www.instagram.com/">
@@ -161,9 +164,7 @@
             </a>
             <p>@ClaudiaBraida</p>
           </div>
-        </div>
-        
-        <div class="link-contact">
+
           <div class="link">
             <a href="https://www.whatsapp.com/">
               <i class="contact fa-brands fa-whatsapp"></i>
@@ -179,33 +180,39 @@
           </div>
         </div>
       </div>
-      
+        
+
+      <!-- <div class="link-contact"></div> -->
       <!-- .......FORM............ -->
-      <form action="">
-        <fieldset>
-          <label for="name">Nombre:</label>
-          <input type="text" name="name" id="name" placeholder="Nombre *" required>
-        </fieldset>
-        
-        <fieldset>
-          <label for="surname">Apellido:</label>
-          <input type="text" name="surname" id="surname" placeholder="Apellido *" required>
-        </fieldset>
-        
-        <fieldset>
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="Email *" required>
-        </fieldset>
-        
-        <fieldset>
-          <label for="textarea">Mensaje:</label>
-          <textarea name="message" id="message" placeholder="Escribe tu mensaje" cols="14" rows="3"></textarea>
+      <div class="wrapper-form">
+        <h2 class="title-form">Escribime</h2>
+        <form action="">
+          <fieldset>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Nombre *" required>
+          </fieldset>
+
+          <fieldset>
+            <label for="surname">Apellido:</label>
+            <input type="text" name="surname" id="surname" placeholder="Apellido *" required>
+          </fieldset>
+
+          <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email *" required>
+          </fieldset>
+            
+          <fieldset>
+            <label for="textarea">Mensaje:</label>
+            <textarea name="message" id="message" placeholder="Escribe tu mensaje" cols="14" rows="3"></textarea>
+          </fieldset>
           <button type="submit">ENVIAR</button>
-        </fieldset>
-        
-      </form>
+        </form>
+      </div>
     </section>
   </main>
+          
+            
 
   <!-- ***********FOOTER********** -->
   <footer>

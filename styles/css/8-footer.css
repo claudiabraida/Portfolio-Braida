@@ -36,7 +36,7 @@ footer .footer-social-contact .social{
 /* background-color: #b0195d;  */
 footer .paragraph-copyrigth,
 footer .text-copyright{
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1;
 }
 
@@ -46,7 +46,7 @@ footer .text-copyright{
 
 @media (min-width: 768px){
   footer{
-    height: 400px;
+    height: 350px;
   }
   
   footer .footer-links-items{
@@ -63,7 +63,7 @@ footer .text-copyright{
 
   footer .footer-social-contact{
     gap: 50px;
-    margin-top: 2%;
+    margin-top: 3%;
   }
   
   footer .footer-social-contact .social{
@@ -87,36 +87,42 @@ footer .text-copyright{
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
   footer{
-    height: 65vh;
+    height: 470px;
   }
   
   footer .footer-links-items{
     /* background-color: #eb3affe6; */
-    width: 70%;
-    font-size: 1.6em;
-    letter-spacing: 8;
-    margin-top: 4%;
+    background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
+    width: 90%;
+    font-size: 1.99em;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 5%;
+    padding: 0;
   }
 
   footer .footer-social-contact{
     gap: 50px;
-    margin-top: 1%;
+    margin-top: 3%;
   }
   
   footer .footer-social-contact .social{
-    font-size: 3em;
+    font-size: 3.4em;
   }
 
   .footer-copyright{
     /* background-color: blueviolet; */
     margin-top: -1%;
   }
-
+  
   footer .paragraph-copyrigth,
   footer .text-copyright{
-  /* background-color: #b0195d;  */
-  font-size: 1.70em;
-}
+    /* background-color: #b0195d; */
+    font-size: 2em;
+    line-height: 1;
+  }
 
 }
+
 /* ................MEDIA QUERIE 4K................... */

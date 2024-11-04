@@ -1,54 +1,35 @@
 /* *****SECTION PROYECTS***** */
 main #container-projects{
-  /**/ height:1900px; 
-  background-color: #39dcce;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-main #container-projects #title-projects{
-  background-color: #6f51aff2;
-  text-transform: uppercase;
-  /* writing-mode: vertical-lr; */
-  
-  /* letter-spacing: 180px; */
-  font-weight: 500;
-  font-size: 2em;
-  margin: 0;
- z-index: 2;
-  /**/  
-}
-
-/* .....CARDS PROJECTS..... */
-
-main #container-projects .wrapper-cards-projects{
-  /* background-color: #cacd20; */
-  /* background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13); */
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  /* align-items: start; */
-  gap: 30px;
- 
-  /*  /* z-index: -1; */
-} 
-
-#container-projects .wrapper-cards-projects .card{
-  /* background-color: #d3269f; */
-  width: 70%;
+  /* background-color: #39dcce; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  border-radius: 40px;
-  z-index: 1;
-  /* box-shadow:  20px 10px  68px -60px #2e5996 ; */
-  
 }
 
+main #container-projects #title-projects{
+  /* background-color: #6f51aff2; */
+  text-transform: uppercase;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+/* .....CARDS PROJECTS..... */
+main #container-projects .wrapper-cards-projects{
+  /* background-color: #9b9e16; */
+  background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+main #container-projects .wrapper-cards-projects .card{
+  width: 70%;
+}
+
+/* ......ANIMACIÓN CARDS...... */
 main #container-projects .wrapper-cards-projects 
 .image-project-1,
 .image-project-2,
@@ -56,7 +37,7 @@ main #container-projects .wrapper-cards-projects
 .image-project-4{
   width: 100%;
   border-radius: 10px;
-  margin: 8% 3% ;
+  /* margin: 8% 3% ; */
   box-shadow: 30px 40px 30px -10px #000000;
   view-timeline-name: --image;
   view-timeline-axis: block;
@@ -71,32 +52,28 @@ main #container-projects .wrapper-cards-projects
     opacity: 0;
     scale: 50%;
   }
-  
+
   to{
     opacity: 1;
     scale: 100%;
   }
-
 }
 
-.wrapper-cards-projects .card .text-project{
-  font-size: 1.3em;
+main #container-projects .wrapper-cards-projects .card .text-project{ 
+  font-size: 1.7em;
   text-align: center;
-  margin: -6% 1% ;
-  z-index: 1;
-  margin-top: 1%;
-  /* position: relative; */
-  /* left: 5%; */
-}
+  z-index: 2;
+  margin-top: 10%;
+} 
 
-#container-projects .paragraph-projects{
-  border: 1px solid #1a5917;
-  width: 70%;
+/* main #container-projects .paragraph-projects{
+  background-color: chocolate;
+  width: 90%;
   font-size: 1em;
-  font-weight: 4300;
+  font-weight: 400;
   line-height: 1.9;
   letter-spacing: 1.3px;
-}
+} */
 
 /* ESTILOS PARA VIDEOS */
 /* .wrapper-cards-projects .video-project{
@@ -117,79 +94,41 @@ main #container-projects .wrapper-cards-projects
 /* ................MEDIA QUERIE TABLET*................ */
 
 @media (min-width: 768px){
+
+  
+  
+  /* .....CARDS PROJECTS TABLET ..... */
+  
   main #container-projects #title-projects{
-    background-color: #714ebcfb;
-    width: 9%;
-    font-size: 4em;
-    align-self: flex-start;
-    /* position: relative;
-    left: 3%; */
+    background-color: red;
+    font-size: 2.7em;
+    margin: -4% 0% 5% 0%;
   }
-  
-  /* .....CARDS PROJECTS..... */
-  
+
   main #container-projects .wrapper-cards-projects{
-    /* background-color: #1b39e6; */
-    width: 100%;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  } 
-  
-  #container-projects .wrapper-cards-projects .card{
-    /* background-color: #d3269f; */
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    border-radius: 40px;
-    box-shadow:  20px 10px  68px -60px #2e5996 ;
   }
   
-  main #container-projects .wrapper-cards-projects 
-  .image-project-1,
-  .image-project-2,
-  .image-project-3,
-  .image-project-4{
-    width: 80%;
-  } 
   
-  .wrapper-cards-projects .card .text-project{
-    font-size: 3em;
-    text-align: center;
-    margin: -6% 1% ;
-    z-index: 1;
-    /* position: relative; */
-    /* left: 5%; */
+  main #container-projects .wrapper-cards-projects .card{
+    width: 39%;
+    gap: 20px;
   }
 
-}
-
-#container-projects .paragraph-projects{
-  /* background-color: red; */
-  width: 90%;
-  font-size: 1em;
-  line-height: 2;
-  letter-spacing: 0.8px;
-  text-align: center;
 }
   
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
-  main #container-projects{
-    background-color: #ff14ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-
+   
+  main #container-projects #title-projects{
+    /* background-color: red; */
+    font-size: 4em;
+    margin: -11% 0% 5% 0%;
   }
 
   #container-projects .wrapper-cards-projects .card{
-    background-color: #91d326;
+    /* background-color: #91d326; */
     width: 90%;
     box-shadow:  20px 10px  68px -60px #2e5996 ;
   }
