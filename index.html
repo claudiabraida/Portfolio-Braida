@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./styles/css/images/0-logo-braida.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles/css/0-normalize.css">
   <link rel="stylesheet" href="./styles/css/1-principal-style.css">
   <title>PORTFOLIO CLAUDIA BRAIDA</title>
@@ -11,15 +11,14 @@
 <body>
   <!-- ***********HEADER********** -->
   <header>
-    <a class="wrapper-logo-braida" href="#">
-      <img class="logo-braida" src="./styles/css/images/logo-braida.jpg" alt="logo marca personal" loading="lazy">
-    </a>
-    <a class="wrapper-logo-menu" href="#">
-      <img class="logo-menu" src="./styles/css/images/logo-braida.jpg" alt="icono de menu" loading="lazy">
-    </a>
+    <img class="logo-braida" src="./styles/css/images/0-logo-braida.jpg" alt="logo marca personal" loading="lazy">
     <!-- ...........NAV......... -->
-    <nav class="wrapper-menu-nav">
-      <ul>
+    <nav class="nav-menu">
+      <label class= "wrapper-logo-menu" for="menu-check" >
+        <img class="logo-menu" src="./styles/css/images-logos/0-menu-logo.jpg" alt="icono de menu" loading="lazy">
+      </label>
+      <input id="menu-check" type="checkbox">
+      <ul class="menu">
         <li><a class="about" href="#hero-title-about">SOBRE MÍ</a></li>
         <li><a class="title-skills" href="#title-skills">CONOCIMIENTOS</a></li>
         <li><a class="projects" href="#title-projects">PROYECTOS</a></li>
@@ -42,8 +41,8 @@
         <a class="hero-what-do-I-do-about" href="#container-projects">LO QUE HAGO</a>
       </div>
     </section>
+
     <!-- INSERTAR IMAGEN HERO DESDE CSS/BACKGROUND-IMAGE -->
-      <!-- <h1 id="hero-title-about">hola soy claudia braida!-hola soy claudia braida!</h1> -->
     <!-- ***********SKILLS********** -->
     <section class="container-skills">
       <h2 id="title-skills">MIS CONOCIMIENTOS</h2>
@@ -112,6 +111,9 @@
     <section id="container-projects">
       <h2 id="title-projects">mis proyectos</h2>
       <!-- ........CARDS PROJECTS....... -->
+       <!-- ACALRACIÓN LOS ELEMENTOS VIDEOS SE IBAN A UTILIZAR EN UN PRINCIPIO -->
+       <!-- SE LOS DEJÓ PARA UTILIZARLOS EN UN FUTURO DENTRO DEL MISMO HTML O EN OTROS SI SE REDIRECCIONA  -->
+       <!-- DESDE EL HTML PRINCIPAL -->
       <div class="wrapper-cards-projects">
         <figure class="card project-1">
           <!-- <video class="video-project" src="./styles/css/videos/web-golden-helmet-cascos-de-diseño.mp4" controls autoplay muted></video> -->
@@ -141,15 +143,12 @@
       </p> -->
     </section>
 
-    <!-- ***********CONTACT FORM********** --><!-- .......CONTACT........ -->
+    <!-- ***********CONTACT FORM********** -->
     <section id="container-contact">
       <h2 class="title-contact-me">Contactame</h2>
-      
-      <!-- <div class="wrapper-paragraph-contact"></div> -->
+      <!-- .......CONTACT........ -->
       <div class="wrapper-contact">
         <p class="paragraph-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quos nobis reiciendis temporibus dolores dicta iure debitis expedita provident ab libero quia, quidem repellat! Ab quod nostrum nobis placeat!</p>
-        
-        
         <div class="link-contact">
           <div class="link">
             <a href="https://www.instagram.com/">
@@ -181,8 +180,6 @@
         </div>
       </div>
         
-
-      <!-- <div class="link-contact"></div> -->
       <!-- .......FORM............ -->
       <div class="wrapper-form">
         <h2 class="title-form">Escribime</h2>
@@ -212,8 +209,6 @@
     </section>
   </main>
           
-            
-
   <!-- ***********FOOTER********** -->
   <footer>
     <!-- ........ITEMS............ -->
@@ -261,8 +256,6 @@ NUEVOS CAMBIOS .
    ✔Se agrega Sección de Contacto y Formulario.
    ✔Se agrega Footer con links de las secciones 
     y textos de derechos y autor. -->
-
-
 
  <!--    <div class="wrapper-links">
           <a href="#">
@@ -315,5 +308,3 @@ NUEVOS CAMBIOS .
         </div>
       </div> -->
        <!-- 💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦 -->  
-     
-<!-- 

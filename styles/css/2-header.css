@@ -2,114 +2,137 @@
 header{
   /* background-color: rgb(203, 203, 229); */
   background: linear-gradient(#000000, #d11faa, #000000);
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 60%;
+  width: 100%; 
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
 }
 
-header .wrapper-logo-braida .logo-braida,
-header .wrapper-logo-menu .logo-menu{
-  background-color: #fff;
-  width: 90%;
+header .logo-braida{
+  width: 15%;
   border-radius: 50%;
+  position: relative;
+  top: 12px;
+  left: 6%;
+  margin: 6px 0px 29px 0px;
+}
+
+header .nav-menu {
+  /* background-color: #ff7b00; */
+  width: 35%;
+  position: absolute;
+  left: 65%; 
+  top: 30%;
+  z-index: 1;
+} 
+
+header .nav-menu .wrapper-logo-menu .logo-menu{
+  filter: drop-shadow(0px 0px 4px#b508d3);
+  width: 30%;
   cursor: pointer;
+  position: relative;
+  left: 40%;
+  top: 2%;
+  /* z-index: 1; */
 }
 
-header .wrapper-logo-braida .logo-braida{
-  margin: 20% 6% 10% 25%;
-}
-
-header .wrapper-logo-menu .logo-menu{
-  margin: 6% 25% -8% -15% ;
-}
-
-header .wrapper-menu-nav{
+header .nav-menu #menu-check{
+  width: 5%;
   display: none;
 }
 
-/* *******************MEDIAS QUERIES******************* */
+header .nav-menu .menu{
+  background-color: #090121cc;
+  width: 90%;
+  font-size: 1em;
+  line-height: 2;
+  display: none;
+  position: relative;
+  left: -31%;
+  z-index: 1;
+  padding: 20px 20px 20px 25px;
+}
 
-/* ................MEDIA QUERIE TABLET*................ */
+header .nav-menu #menu-check:checked~.menu{
+  display: block;
+  z-index: 1;
+}
 
-@media (min-width: 768px){
+/* ................MEDIA QUERIE TABLET................ */
+@media (min-width:768px){
   header{
-    /* background-color: red; */
+    position: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    /* background-color: red; color de referencia
+    para ubicación del elemento*/
     /* background: linear-gradient(#0b0a10,  #9F1E83, #0B0B13); */
-    justify-content:flex-start;
-    gap: 0px;
     /* z-index: 2; par si se utiliza
     position:sticky;
     position: fixed; */ 
   }
 
-  header .wrapper-logo-braida{
-    /* background-color: aquamarine; */
-    width: 16%;
-    height:120px;
+  header .logo-braida{
+    position: initial;
+    width: 13%;
+    margin: 25px 0px 29px 29px;
   }
-  
-  header .wrapper-logo-braida .logo-braida{
-    width:65%;
-    margin: 16% 2% 0% 9%;
-    border-radius: 50%;
-  }
-  
-  header .wrapper-logo-menu .logo-menu{
+
+  header .nav-menu .wrapper-logo-menu .logo-menu{
     display: none;
   }
   
   /* .......NAV querie 768....... */
-  header .wrapper-menu-nav{
+  header .nav-menu{
     /* background-color: #ff9500; */
-    width: 80%;
-    display: flex;
+    position: initial;
+    width: 100%;
   }
   
-  header .wrapper-menu-nav ul{ 
-    /* background-color: #68ef29fa; */
-    width: 100%;
-    font-size: 1.65em;
+  header .nav-menu .menu{ 
+    /* background-color: #ec3a3a; */
+    background-color: transparent;
+    position: initial;
+    width: 97%;
+    font-size: 1.6em;
     font-weight:500;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 20px;
     padding: 0;
   }
-    
 }
 
 /* ................MEDIA QUERIE DESKTOP................ */
 @media (min-width:1024px){
-  /* header{
-  background-color: blue;
-  } color para ubicación de los elementos*/
+  header{
+    gap: 30px; 
+  }
 
-  header .wrapper-logo-braida{
-    /* background-color: aquamarine; */
-    width: 15%;
-    height: 143px;
+  header .logo-braida{
+    width: 12%;
+    margin: 30px 0px 29px 35px;
+  }
+
+  /* .......NAV querie 768....... */
+  header .nav-menu{
+    /* background-color: #ff9500; */
+    width: 80%;
   }
   
-  header .wrapper-logo-braida .logo-braida{
-    width: 70%;
-    margin: 10% 2% 1% 10%;
-  }
-
-  /* .......NAV.-querie 1024...... */
-  header .wrapper-menu-nav{
-    /* background-color: green; */
-    width: 83%;
-  }
-
-  header .wrapper-menu-nav ul{
-    /* background-color: violet; */
-    font-size: 2.1em;
-    justify-content: flex-start;
-    gap: 40px;
+  header .nav-menu .menu{ 
+    /* background-color: #ec3a3a; */
+    position: initial;
+    width: 96%;
+    font-size: 1.80em;
+    font-weight:500;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 60px;
   }
 }
 /* ................MEDIA QUERIE 4K................... */

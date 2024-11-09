@@ -34,7 +34,7 @@ main .container-hero-about .hero-title-braida{
   text-transform: uppercase;
   letter-spacing: 17px;
   position: absolute;
-  top: 5%;
+  top: 9%;
   left: 10%;
   transform: skew(-39deg, 15deg);
 }
@@ -53,8 +53,8 @@ main .container-hero-about .hero-content-about{
 }
 
 main .container-hero-about .hero-content-about .hero-paragraph-about{
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 main .container-hero-about .hero-content-about .hero-what-do-I-do-about{
